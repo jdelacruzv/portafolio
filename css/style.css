@@ -1,0 +1,674 @@
+/* font-family: 'Fjalla One', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
+    font-size: 16px;
+}
+
+.container_menu-hamburger {  
+    margin: 0;
+    position: fixed;
+    z-index: 500;
+    top: 8px;
+    right: 8px;
+    display: none;
+}
+
+.hamburger_menu {            
+    width: 50px;
+    height: 50px;
+}
+
+.header {
+    background-color: #323232;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    
+    position: sticky;
+    top: 0;
+    z-index: 400;
+    /* width: 100%; */
+}
+
+.header figure {
+    margin: 0px 0px 0px 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.header figure img {
+    width: inherit;
+    height: inherit;
+}
+
+.header figure p {
+    color: white;
+    margin: 0px 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu {
+    height: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h1 {
+    line-height: 150%;                 /* Separación o espaciado entre las líneas de texto */
+    font-size: 40px;                   /* Tamaño de la letra */
+    font-weight: normal;               /* Grosor de la letra */
+    /* font-style: normal; */
+    letter-spacing: -.2px;             /* Separación de la letra */
+    /* text-transform: capitalize; */  /* Pone la 1° letra de cada palabra en mayúscula */
+    color: white;
+    margin: 0px;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    height: inherit;
+}
+
+li {
+    height: inherit;
+}
+
+.link {
+    text-decoration: none;   /* Quita el underline que viene por defecto */
+    color: white;
+    display: flex;
+    height: inherit;
+    align-items: center;     /* centra de forma vertical */
+    margin: 0px 20px;
+    padding: 0px 10px;
+}
+
+.main {
+    height: 300px;
+    background-color: #1C1C1C;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main figure {
+    margin: 0px;
+    width: 500px;
+    height: inherit;
+}
+
+.main img {
+    width: inherit;
+    height: inherit;
+}
+
+.main span {
+    color: #12ee0b;
+}
+
+.projects {
+    padding: 0px 1.5rem 10px 1.5rem;
+    background-color: #744BC525;
+}
+
+.project {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black; /* box-shadow: derecha abajo difumado color; */
+    margin: 0px 0px 1.8rem 0px;
+    padding: 2%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    margin: 0px;
+    padding: 1.5rem 0rem;
+    text-transform: uppercase;
+    color: #005086;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;   /* buscar otra letra para que se note el cambio */
+    font-size: 1.6rem;
+}
+
+.project-left {
+    width: 48%;
+}
+
+.project-title {
+    margin: 0px 0px 0.7rem 0px;
+    font-size: 1.3rem;
+}
+
+.project-language, .project-date, .project-link, .project-description {
+    margin: 0.7rem 0;
+}
+
+.project-link a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.project-container_image {
+    width: 48%;
+    margin: 0px;
+}
+
+.project-image {
+    /* width: inherit; /* Hereda el ancho del padre: .project-contanier_image */
+    /*height: inherit; */
+    width: 100%;
+}
+
+.experience-mainTitle {
+    margin: 0px;
+    padding: 1.5rem 0 1.5rem 0rem;
+}
+
+.experiences {
+    padding: 0px 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.experience {
+    margin: 0px 2% 40px 0px;
+    width: 48%;
+    border-radius: 10px;
+    overflow: hidden;  /* logra que la imagen tome el border radius */
+    flex-shrink: 0;
+    background-color: #f4fbff;;
+}
+
+.experience-container_image {
+    margin: 0px;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.experience-image {
+    object-fit: cover; /* redimensiona la imagen */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.experience-down {
+    margin: 0 1.5rem 1.3rem 1.5rem;
+    margin-top: -2rem;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.experience-title {
+    margin: 0px;
+}
+
+.experience-description {
+    text-align: left;
+}
+
+.experience-down button {
+    border: 1px solid #005086;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #005086;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #272822;
+    padding: 1.7rem 2.5rem 1.7rem 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-form h2 {
+    padding: 0px;
+    color: white;
+}
+
+.contact-form input {
+    border-color: gray;
+    border-style: solid;
+    padding: 5px 5px 5px 35px;
+    border-radius: 5px;
+    background-image: url(../img/envelope.svg);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position-y: center;
+    background-position-x: 5px;
+    outline: none;
+    margin-top: 20px;
+}
+
+.contact-form button {
+    display: block;
+    padding: 5px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid white;
+    background-color: transparent;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.redes {
+    display: flex;
+}
+
+.redes-link {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    
+}
+
+.redes-link.github {
+    background-image: url(../img/github.svg);
+    background-size: 50px 50px;
+}
+
+.redes-link.facebook {
+    background-image: url(../img/facebook.svg);
+    background-size: 50px 50px;
+}
+
+.redes-link.instragram {
+    background-image: url(../img/instagram.svg);
+    background-size: 50px 50px;
+}
+
+.redes-link.twitter {
+    background-image: url(../img/twitter.svg);
+    background-size: 50px 50px;
+}
+
+.footer {
+    background-color: #0c0c0c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2.5rem;
+    color: white;
+}
+
+.footer-details {
+    display: flex;
+    align-items: center;
+}
+
+.footer-details img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.wrapper {
+    max-width: 1000px;  /* Desde 0 a 1000 */
+    flex: 1; /* flex: grow - Ajustate siempre a esos 1000px */
+    margin: 0px auto;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+/*--------------------------------------------------------------------*/
+
+/* Forma ideal de poner los media queries a través de los estilos */
+@media screen and (max-width:1024px) {
+    .experience-mainTitle {
+        margin: 0px;
+        padding: 1.5rem 0 1.5rem 1.5rem;
+    }
+
+    .main {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 3rem 1.5rem;
+    }
+
+    h1 {
+        z-index: 100;
+    }
+
+    .main figure {
+        width: auto;
+    }
+
+    .main figure img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+/*--------------------------------------------------------------------*/
+
+@media screen and (max-width:768px) {
+    .container_menu-hamburger {
+        display: block;
+    }
+
+    .header {
+        height: auto;
+        display: block;
+    }
+
+    .header figure {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        margin: 0px 0px 0px 0px;
+        padding: 10px 0px;
+    }
+
+    .menu {
+        position: fixed;
+        z-index: 300;
+        background-color:rgba(0, 0, 0, 0.329);
+        top: 0;
+        left: -1000vw;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+    }
+
+    .menu.menu_active {
+        left: 0;
+    }
+
+    ul {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .link {
+        justify-content: center;
+        margin: 0px 0px;
+        padding: 10px 0px;
+        font-size: 2rem;
+        color: rgb(219, 255, 16);
+        text-shadow: 5px 5px 5px crimson;
+    }
+
+    .link:hover {
+        background-color: #06236d56;
+    }
+
+    .projects h2 {
+        font-size: 1.5em;
+        padding: 1em 0em;
+    }
+
+    .project {
+        display: block;
+        padding: 2%;
+        box-shadow: 0px 0px 8px black;
+    }
+
+    .project-left {
+        width: auto; /* Cuando es texto es mejor auto que 100% porque ayuda
+                        a renderizar mejor en el momento de la carga */
+    }
+
+    .project-container_image {
+        width: auto;
+    }
+
+    .project-language, .project-date, .project-link, .project-description {
+        margin: 0.6rem 0;
+    }
+
+    .projects h2 {
+        padding: 1.3rem 0;
+        font-size: 1.5rem;
+    }
+
+    .experience-mainTitle {
+        font-size: 1.5rem;
+        padding: 1.3rem 0 1.3rem 1.5rem;
+    }
+
+    .experiences {
+        display: block;
+    }
+
+    .experience {
+        width: 100%;
+        margin: 0px 2% 3rem 0px;
+    }
+}
+
+/*--------------------------------------------------------------------*/
+
+@media screen and (max-width:572px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    .contact {
+        justify-content: center;
+        padding: 1.7rem 2.5rem 0.5rem 2.5rem;
+    }
+
+    .contact-form {
+        text-align: center;
+    }
+
+    .contact-form button {
+        margin: 1rem auto 1.5rem auto;
+    }
+
+    .redes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .redes-link {
+        margin-bottom: 1rem;
+    }
+
+    .footer {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-details {
+        justify-content: center;
+    }
+}
+/*--------------------------------------------------------------------*/
+
+@media screen and (max-width:480px) {
+    .main {
+        padding: 2.5rem 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .link {
+        padding: 0.5em 0;
+    }
+
+    .projects {
+        padding: 0px 1.2rem 6px 1.2rem;
+    }
+
+    .projects h2 {
+        padding: 1.1rem 0;
+        font-size: 1.4rem;
+    }
+
+    .project {
+        box-shadow: 0px 0px 6px black;
+        padding: 3%;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .project-language, .project-date, .project-link, .project-description {
+        margin: 0.6rem 0;
+        font-size: 1rem;
+    }
+
+    .experience-mainTitle {
+        font-size: 1.4rem;
+        padding: 1.1rem 0 1.1rem 1.2rem;
+    }
+
+    .experiences {
+        padding: 0 1.2rem;
+    }
+
+    .experience {
+        margin: 0px 2% 2.5rem 0px;
+    }
+
+    .experience-down {
+        padding: 1rem;
+        margin: 0 1.5rem 1.3rem 1.5rem;
+        margin-top: -1.5rem;
+    }
+
+    .contact, .footer {
+        padding: 1rem 1.3rem 0.5rem 1.3rem;
+    }
+}
+
+/*--------------------------------------------------------------------*/
+
+@media screen and (max-width:320px) {
+    .main {
+        padding: 1rem 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        padding: 0.5rem;
+        background-color: rgba(66, 63, 63, 0.418);
+    }
+
+    .link {
+        padding: 0.4em 0;
+    }
+
+    .projects {
+        padding: 0px 0.9rem 6px 0.9rem;
+    }
+
+    .projects h2 {
+        padding: 1.1rem 0;
+        font-size: 1.3rem;
+    }
+
+    .project {
+        box-shadow: 0px 0px 4px black;
+        margin-bottom: 0.9rem;
+        padding: 4%;
+    }
+
+    .project-title {
+        font-size: 1.1rem;
+    }
+
+    .project-language, .project-date, .project-link, .project-description {
+        margin: 0.6rem 0;
+        font-size: 0.9rem;
+    }
+
+    .experience-mainTitle {
+        font-size: 1.3rem;
+        padding: 1.1rem 0 1.1rem 0.9rem;
+    }
+
+    .experiences {
+        padding: 0 0.9rem;
+    }
+
+    .experience {
+        margin: 0px 2% 2rem 0px;
+    }
+
+    .experience-down {
+        padding: 0.8rem;
+        margin: 0 1rem 1.3rem 1rem;
+        margin-top: -1.5rem;
+    }
+
+    .experience-title {
+        font-size: 1rem;
+    }
+
+    .experience-description {
+        font-size: 0.9rem;
+    }
+
+    .redes-link.github {
+        margin-left: 0;
+    }
+
+    .contact, .footer {
+        padding: 1rem 1rem 0.5rem 1rem;
+    }
+}
+
+.video_youtube {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video_youtube:hover {
+    z-index: 200;
+}
