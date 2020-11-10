@@ -1,11 +1,7 @@
-/* font-family: 'Fjalla One', sans-serif;
-font-family: 'Source Sans Pro', sans-serif; */
-
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0px;
     font-size: 16px;
-    /* padding-top: 70px; */
 }
 
 /* -------------------- MENU HAMBURGER -------------------- */
@@ -33,16 +29,6 @@ body {
     justify-content: space-between;
     height: 70px;
     align-items: center;
-    
-    /* position: sticky;
-    top: 0;
-    z-index: 400; */
-
-    /* position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 400;
-    transition: top 0.8s; */
 }
 
 .header figure {
