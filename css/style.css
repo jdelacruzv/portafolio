@@ -5,7 +5,10 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0px;
     font-size: 16px;
+    /* padding-top: 70px; */
 }
+
+/* -------------------- MENU HAMBURGER -------------------- */
 
 .container_menu-hamburger {  
     margin: 0;
@@ -21,13 +24,15 @@ body {
     height: 50px;
 }
 
+/* -------------------- HEADER -------------------- */
+
 .header {
     background-color: #323232;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     height: 70px;
-    align-items: center;   
+    align-items: center;
 }
 
 .header figure {
@@ -48,6 +53,8 @@ body {
     font-size: 30px;
     font-weight: bold;
 }
+
+/* -------------------- MENU -------------------- */
 
 .menu {
     height: inherit;
@@ -80,6 +87,10 @@ li {
     height: inherit;
 }
 
+.menu a:hover {
+    color: blue;
+}
+
 .link {
     text-decoration: none;   /* Quita el underline que viene por defecto */
     color: white;
@@ -88,10 +99,13 @@ li {
     align-items: center;     /* centra de forma vertical */
     margin: 0px 20px;
     padding: 0px 10px;
+    text-transform: uppercase;
 }
 
+/* -------------------- MAIN -------------------- */
+
 .main {
-    /* height: 300px; */
+    height: 19rem; /*300px;*/
     background-color: #1C1C1C;
     display: flex;
     flex-wrap: wrap;
@@ -114,6 +128,8 @@ li {
     color: #12ee0b;
 }
 
+/* -------------------- SECTION: PROJECTS -------------------- */
+
 .projects {
     padding: 0px 1.5rem 10px 1.5rem;
     background-color: #744BC525;
@@ -133,12 +149,13 @@ li {
 
 h2 {
     margin: 0px;
-    padding: 1.5rem 0rem;
+    padding: 1.5rem 0 1.5rem 0rem;
     text-transform: uppercase;
     color: #005086;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;   /* buscar otra letra para que se note el cambio */
+    font-weight: bold;
     font-size: 1.6rem;
+    text-align: center;
 }
 
 .project-left {
@@ -166,14 +183,18 @@ h2 {
 }
 
 .project-image {
-    /* width: inherit; /* Hereda el ancho del padre: .project-contanier_image */
+    /* Hereda el ancho del padre: .project-contanier_image */
+    /* width: inherit; */
     /*height: inherit; */
     width: 100%;
 }
 
+/* -------------------- SECTION: EXPERIENCES -------------------- */
+
 .experience-mainTitle {
     margin: 0px;
     padding: 1.5rem 0 1.5rem 0rem;
+    background-color: white;
 }
 
 .experiences {
@@ -181,6 +202,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: white;
 }
 
 .experience {
@@ -236,6 +258,8 @@ h2 {
     border-radius: 5px;
     color: #005086;
 }
+
+/* -------------------- CONTACT -------------------- */
 
 .contact {
     display: flex;
@@ -308,6 +332,8 @@ h2 {
     background-size: 50px 50px;
 }
 
+/* -------------------- FOOTER -------------------- */
+
 .footer {
     background-color: #0c0c0c;
     display: flex;
@@ -329,6 +355,8 @@ h2 {
     margin-left: 10px;
 }
 
+/* -------------------- DIV WRAPPER -------------------- */
+
 .wrapper {
     max-width: 1000px;  /* Desde 0 a 1000 */
     flex: 1; /* flex: grow - Ajustate siempre a esos 1000px */
@@ -340,9 +368,8 @@ h2 {
     flex-wrap: inherit;
 }
 
-/*--------------------------------------------------------------------*/
+/* ------------------------------ 1024px ------------------------------ */
 
-/* Forma ideal de poner los media queries a través de los estilos */
 @media screen and (max-width:1024px) {
     .experience-mainTitle {
         margin: 0px;
@@ -374,7 +401,7 @@ h2 {
     }
 }
 
-/*--------------------------------------------------------------------*/
+/* ------------------------------ 768px ------------------------------ */
 
 @media screen and (max-width:768px) {
     .container_menu-hamburger {
@@ -458,6 +485,7 @@ h2 {
     }
 
     .projects h2 {
+        /* padding: 2.5rem 0 1.5rem 0rem; */
         padding: 1.3rem 0;
         font-size: 1.5rem;
     }
@@ -477,7 +505,7 @@ h2 {
     }
 }
 
-/*--------------------------------------------------------------------*/
+/* ------------------------------ 572px ------------------------------ */
 
 @media screen and (max-width:572px) {
     h1 {
@@ -515,7 +543,8 @@ h2 {
         justify-content: center;
     }
 }
-/*--------------------------------------------------------------------*/
+
+/* ------------------------------ 480px ------------------------------ */
 
 @media screen and (max-width:480px) {
     .main {
@@ -577,7 +606,7 @@ h2 {
     }
 }
 
-/*--------------------------------------------------------------------*/
+/* ------------------------------ 320px ------------------------------ */
 
 @media screen and (max-width:320px) {
     .main {
