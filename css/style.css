@@ -469,8 +469,8 @@ h2 {
     }
 
     .project-left {
-        width: auto; /* Cuando es texto es mejor auto que 100% porque ayuda
-                        a renderizar mejor en el momento de la carga */
+        /* Cuando es texto es mejor auto que 100% porque ayuda a renderizar mejor en el momento de la carga */
+        width: auto; 
     }
 
     .project-container_image {
