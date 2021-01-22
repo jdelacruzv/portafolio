@@ -36,7 +36,7 @@ h2 {
 .container_menu-hamburger {  
     margin: 0;
     position: fixed;
-    z-index: 500;
+    z-index: 900;
     top: 8px;
     right: 8px;
     display: none;
@@ -251,6 +251,113 @@ li {
     width: 100%;
     box-shadow: 0px 0px 8px #000000;
     border-radius: 5px;
+}
+
+/* ----------- WINDOW MODAL ---------- */
+.container-modal {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;         
+    opacity: 0;
+    /* Controla si el elemento puede o 
+       no recibir eventos del cursor */
+    pointer-events: none;
+    transition: all 1s;
+}
+
+.window-modal {
+    background: linear-gradient(#f5f9fa,#ebf3f5);
+    width: 45rem;
+    border-radius: 5px;
+    position: relative;
+}
+
+.window-header {
+    background: linear-gradient(#323333,#2a2b2b);
+    color: #ffffff;
+}
+
+.window-header_main {
+    text-align: center;
+}
+
+.window-header_close {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    height: 50px;
+}
+
+.window-header_close img {
+    padding: 0.2rem;
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.window-header_close img:hover {
+    opacity: 0.5;
+}
+
+.window-header_main_title {
+    font-size: 2rem;
+    font-weight: 900;
+    /* color: #16F6F6; */
+    color: #ffffff;
+    margin: 0;
+}
+
+.window-header_main_address {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.window-header_main_description {
+    font-size: 1rem;
+    padding: 1rem 0 2.5rem 0;
+    margin: 0;
+}
+
+.window-body_title {
+    background-color: #29bad7;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+}
+
+.window-body_title h4 {
+    margin-left: 1rem;
+    color: #ffffff;
+}
+
+.window-body_description {
+    text-align: justify;
+    margin-left: 2.5rem;
+    margin-bottom: 2rem;
+    color: #5c5e5e;    /*#323333*/
+}
+
+.window-body_description h5 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.window-body_description p {
+    margin-left: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 0.5rem;
+}
+
+.show {
+    pointer-events: auto;
+    /* Muestra la ventana */
+    opacity: 1;
 }
 
 /* -------------------- CONTACT -------------------- */

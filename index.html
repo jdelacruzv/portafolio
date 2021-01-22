@@ -21,7 +21,7 @@
         <div class="main-details">
           <p>Hola, soy...</p>
           <h1>Jose De La Cruz</h1>
-          <p>Desarrollador JavaScript Front End . . .<span>&#160;</span></p>
+          <p>Desarrollador Javascript Front End . . .<span>&#160;</span></p>
         </div>
       </div>
     </section>
@@ -100,19 +100,84 @@
     <section id="experiencia" class="experiences">
       <div class="wrapper">
         <h2>Experiencia</h2>
-        <article class="experience">
+        <article id="resume" class="experience">
           <figure class="experience-container_image">
-            <a href="https://www.maestro.com.pe/" target="_blank"><img class="experience-image" src="img/maestro.jpg" alt=""></a>
+            <img class="experience-image" src="img/maestro.jpg" alt="">
           </figure>
           <figure class="experience-container_image">
-            <a href="https://www.multitop.pe/" target="_blank"><img class="experience-image" src="img/multitop.jpg" alt=""></a>
+              <img class="experience-image" src="img/multitop.jpg" alt="">
           </figure>
           <figure class="experience-container_image">
             <img class="experience-image" src="img/freelance.jpg" alt="">
           </figure>
         </article>
+
+        <div id="window-resume" class="container-modal">
+          <div class="window-modal">
+            <div class="window-header">          
+              <figure class="window-header_close">
+                <img id="close-resume" src="img/close_green.png" alt="">
+              </figure>
+              <div class="window-header_main">
+                <p class="window-header_main_title">Jose Luis De La Cruz Vela</p>
+                <p class="window-header_main_address">jldlcv@gmail.com | Rionegro, Colombia</p>
+                <p class="window-header_main_description">Profesional en Ciencias de la Aministración y Desarrollador Javascript Font End</p>
+              </div>
+            </div>
+            <div class="window-body">          
+              <div class="window-body_title">
+                <h4>Experiencia Laboral</h4>
+              </div>
+              <div class="window-body_description">
+                <h5>Ene 2019 - A hoy | Independiente (RUT 700211902) | Técnico en Soporte TI | Rionegro - Colombia</h5>
+                <p>•	Soporte remoto y asistencial al usuario (cliente) mediante el programa TeamViewer.</p>
+                <p>•	Diagnóstico y solución a los problemas de software y hardware del cliente.</p>
+                <p>•	Instalar y configurar sistemas operativos como MS Windows y Linux (Ubuntu/Debian).</p>
+                <p>•	Mantenimiento preventivo y correctivo a los computadores de mesa y portátiles.</p>
+                
+                <h5>Abr 2016 - Dic 2018 | Multitop S.A.C. | Supervisor de Inventarios | Lima - Perú</h5>
+                <p>•	Planificar y supervisar los inventarios generales y cíclicos de 03 bodegas y 01 almacén.</p>
+                <p>•	Auditar procesos logísticos: picking, packing, movimientos internos y logística inversa.</p>
+                <p>•	Análisis de diferencias existentes entre la mercadería física y lo registrado en el sistema.</p>
+                <p>•	Clasificar productos descontinuados y en mal estado para su baja en el sistema.</p>
+                <p>•	Validar la operación de los cruces de artículos en base al costo promedio.</p>
+    
+                <h5>Oct 2010 - Ene 2014 | Maestro Perú S.A. | Coordinador de Inventarios | Lima - Perú</h5>
+                <p>•	Planificar y coordinar los inventarios generales, cíclicos y ABC de 10 bodegas y 01 CD.</p>
+                <p>•	Elaborar y supervisar los inventarios cíclicos programados según cronograma.</p>
+                <p>•	Realizar informes del indicador logístico ERI (Exactitud de Registro de Inventarios).</p>
+                <p>•	Soporte del sistema SAP R/3 MM a los almacenes retail y al centro de distribución.</p>
+                <p>•	Capacitar y certificar a los analistas de inventarios para ser monitores.</p>
+                
+                <h5>Dic 2005 - Set 2010 | Maestro Perú S.A. | Analista de Inventarios | Lima - Perú</h5>
+                <p>•	Análisis y depuración de diferencias ocasionadas en las operaciones del almacén.</p>
+                <p>•	Auditar procesos logísticos: picking, packing, movimientos internos y logística inversa.</p>
+                <p>•	Control y seguimiento de la merma operativa (artículos no aptos para la venta).</p>
+                <p>•	Realización de los cruces de artículos en base al costo promedio.</p>
+                <p>•	Supervisar el cumplimiento del rotulado de la mercadería (Bind Card).</p> 
+              </div>
+              <div class="window-body_title">
+                <h4>Información Académica</h4>
+              </div>
+              <div class="window-body_description">
+                <h5>Profesional Universitario en Ciencias de la Administración (Administrador de Empresas)</h5>
+                <p>
+                  •	Universidad Nacional de Educación Enrique Guzmán y Valle (2017 - Lima - Perú)
+                </p>
+                <h5>Diplomado Especializado en Logística y Operaciones (260 Horas)</h5>
+                <p>
+                  •	Cámara Nacional de Comercio del Perú (2017 - Lima - Perú)
+                </p>
+                <h5>•	Profesional Técnico en Computación e Informática (Tecnólogo)</h5>
+                <p>
+                  •	Instituto de Educación Superior Tecnológico María Araoz Pinto (2011 - Lima - Perú)
+                </p>            
+              </div>
+            </div>          
+          </div>
+        </div>
       </div>
-    </section>
+    </section>    
 
     <section id="contacto" class="contact">
       <div class="wrapper">
@@ -139,42 +204,8 @@
           <p>Desarrollado y diseñado por <span>Jose De La Cruz </span> ©2020-2021</p>
         </div>
       </div>
-    </footer>
+    </footer>    
 
-    <script>
-      /* -------------------- Efecto del menu hamburguesa -------------------- */
-      
-      // Captura todos los medias queries que son de 768px para abajo
-      const changes = window.matchMedia('screen and (max-width:768px)');
-
-      // Captura la clase .menu y le asigna a la variable menu
-      const menu_profesional = document.querySelector('.menu');
-
-      const button_hamburger = document.querySelector('#hamburger');
-
-      // Escucha el evento si esta en true o false
-      changes.addListener(validation);
-
-      validation(changes);
-
-      function validation(event) {
-        if(event.matches) {
-          button_hamburger.addEventListener('click', WatchHidden);
-        }
-        else {
-          button_hamburger.removeEventListener('click', WatchHidden);
-        }
-      }
-
-      function WatchHidden() {
-        if(menu_profesional.classList.contains('menu_active')) {
-          menu_profesional.classList.remove('menu_active');
-        }
-        else {
-          menu_profesional.classList.add('menu_active');
-        }
-      }
-    </script>
-    <!-- https://github.com/toperkin/staticFormEmails -->
+    <script src="js/main.js"></script>
   </body>
 </html>
