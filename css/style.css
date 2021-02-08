@@ -4,9 +4,10 @@ html {
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Raleway", sans-serif;
     margin: 0px;
     font-size: 16px;
+    background-image: url(../img/fondo-animado.gif);
 }
 
 h1, h2 {    
@@ -17,18 +18,17 @@ h1 {
     font-size: 3.5rem;
     font-weight: 900;                   
     letter-spacing: 0.1rem;             
-    /* color: #29bad7; */
-    color: #16F6F6;
+    color: #ebf3f5;
 }
 
 h2 {
     font-size: 2rem;
     font-weight: 100;
     letter-spacing: 3px;
-    color: #005086;
+    color: rgb(18, 26, 33);
     text-align: center;
     text-transform: uppercase;
-    padding: 4.5rem 0 3rem 0rem;
+    padding: 5rem 0 4rem 0rem;
 }
 
 /* -------------------- MENU HAMBURGER -------------------- */
@@ -51,25 +51,27 @@ h2 {
 
 .main {
     height: 100vh; 
-    background-image: url("/img/main.svg");
+    background-color: #000000;
+    background-image: url(../img/main.png);
+    /* background-size: 100% 100%;
     background-size: cover;
-    background-position: center;
-    text-align: left;
+    background-position: center;  */
+    background-size: contain;
+    background-repeat: no-repeat;    
 }
 
 .main-details {
-    line-height: 170%;                 
+    line-height: 180%;                 
     font-size: 2.5rem;                   
     color: #ebf3f5;
     margin: 0;
     position: absolute;
-    top: 50%;
-    left: 10%;
-    right: 10%;
+    top: 40%;
+    left: 50%;
 }
 
 .main-details p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     letter-spacing: 0.2rem;                                
     margin: 0;
     position: relative;
@@ -79,8 +81,9 @@ h2 {
     position: absolute;
     right: 0;
     width: 0;
-    background-color: #161111;
-    animation: machine 5s infinite alternate steps(100)
+    border-left: 1px solid #ebf3f5;
+    background-color: #000000;
+    animation: machine 5s infinite alternate steps(90);
 }
 
 @keyframes machine {
@@ -96,13 +99,12 @@ h2 {
 /* -------------------- HEADER -------------------- */
 
 .header {
-    background: linear-gradient(#36bed9,#29bad7);
-    box-shadow: 0px 0px 8px #000000;
+    background-color: rgba(17, 146, 238, 0.9);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 70px;
     position: sticky;
     top: 0;
 }
@@ -110,19 +112,22 @@ h2 {
 .header p a {
     text-decoration: none;
     font-size: 1.5rem;
+    font-weight: bold;
     letter-spacing: 0.2px;
     margin-left: 0.2rem;
-    color: #323333;
-}
-
-.header p a:hover {
     color: #ffffff;
 }
 
+.header p a:hover {
+    font-size: 1.6rem;
+}
+
+
 .header p span {
     font-size: 0.8rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-left: 0.5rem;
+    color: rgb(18, 26, 33);
 }
 
 /* -------------------- MENU -------------------- */
@@ -144,12 +149,14 @@ li {
 }
 
 .menu a:hover {
-    background-color: #0bb3d4;
+    background-color: rgba(2, 118, 173, 0.5);
+    color: #ffffff;
 }
 
 .link {
-    text-decoration: none;   /* Quita el underline que viene por defecto */
-    color: #ffffff;
+    /* Quita el underline que viene por defecto */
+    text-decoration: none;
+    color: #ebf3f5;
     display: flex;
     height: inherit;
     align-items: center;     
@@ -157,11 +164,10 @@ li {
     font-weight: 100;
 }
 
-/* -------------------- SECTION: PROJECTS -------------------- */
+/* -------------------- SECTION PROJECTS -------------------- */
 
 .projects {
     padding: 1rem 1.5rem 5rem 1.5rem;
-    background: linear-gradient(#f5f9fa,#ebf3f5);
 }
 
 .project {
@@ -173,7 +179,7 @@ li {
 
 .project-container {
     width: 32%;
-    margin: 0.5rem 0.2rem;
+    margin: 0 0.2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -182,32 +188,50 @@ li {
 
 .project-container img {
     width: 100%;
-    height: 250px;
-    box-shadow: 0px 0px 5px #000000;
+    height: auto;
+    box-shadow: 0px 0px 5px #ffffff;
+    margin-bottom: 1rem;
+    transition: 0.2s;
 }
 
-.project a {
+.project-container img:hover {
+    opacity: 0.5;
+    cursor: zoom-in;
+    transform: scale(0.9);
+}
+
+.project-btn_github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-btn_github a {
     text-decoration: none;
-    margin: 1rem 0;
-    padding: 0.5rem 2rem;
+    padding: 0.8rem 1.5rem;
     cursor: pointer;
     font-size: 16px;
-    letter-spacing: 0.8px;
-    border: 1px solid#36bed9;
-    background-color: #36bed9;
+    font-weight: 600;
+    border: 1px solid rgb(17, 146, 238);
+    background-color: rgb(17, 146, 238);
     border-radius: 5px;
-    color: #ffffff;
+    color: #fafafa;
+    margin: 2rem 0 1rem 0;
 }
 
-/* -------------------- SKILLS -------------------- */
+.project-btn_github a:hover {
+    border: 1px solid rgb(1, 112, 173);
+    background-color: rgb(2, 102, 173);
+}
+
+/* -------------------- SECTION SKILLS -------------------- */
 
 .skills {
     padding: 1rem 1.5rem 5rem 1.5rem;
-    background-color: #29bad7;
 }
 
 .skills h2 {
-    color: #ffffff;
+    color: #ebf3f5;
 }
 
 .skill {
@@ -218,7 +242,7 @@ li {
 
 .skill-container_image {
     width: 15%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.7rem;
     cursor: pointer;
 }
 
@@ -227,11 +251,10 @@ li {
     border-radius: 15px;
 }
 
-/* -------------------- SECTION: EXPERIENCES -------------------- */
+/* -------------------- SECTION EXPERIENCES -------------------- */
 
 .experiences {
     padding: 1rem 1.5rem 5rem 1.5rem;
-    background: linear-gradient(#f5f9fa,#ebf3f5);
 }
 
 .experience {
@@ -240,45 +263,92 @@ li {
     justify-content: space-between;
 }
 
-.experience-container_image {
+h2 {
+    color: #ebf3f5;
+}
+
+.experience-container {
     width: 25%;
     height: auto;
     margin: 0;
-    cursor: pointer;
 }
 
-.experience-image {
+.zoom-in {
     width: 100%;
-    box-shadow: 0px 0px 8px #000000;
+    box-shadow: 0px 0px 8px #ebf3f5;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
-/* ----------- WINDOW MODAL ---------- */
+.zoom-in:hover {
+    opacity: 0.5;
+    cursor: zoom-in;
+    transform: scale(1.1);
+}
+
+.download-resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.download-resume a {
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid rgb(17, 146, 238);
+    background-color: rgb(17, 146, 238);
+    border-radius: 5px;
+    color: #fafafa;
+    margin: 1rem 0;
+}
+
+.download-resume a:hover {
+    border: 1px solid rgb(1, 112, 173);
+    background-color: rgb(2, 102, 173);
+}
+
+
+/* ------------------- SECTION RESUME MODAL ------------------- */
 .container-modal {
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
+    align-items: center;
+    /* Controla si puede o no recibir eventos del cursor */
+    pointer-events: none;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;         
+	width: 100%;
+	height: 100vh; 
+    overflow: auto; 
+    z-index: 1000;
     opacity: 0;
-    /* Controla si el elemento puede o 
-       no recibir eventos del cursor */
-    pointer-events: none;
     transition: all 1s;
 }
 
+.show {
+    pointer-events: auto;
+    /* Muestra la ventana */
+    opacity: 1;
+}
+
 .window-modal {
-    background: linear-gradient(#f5f9fa,#ebf3f5);
+    background-color: #f5f9fa;
     width: 45rem;
+    max-width: 100%;
     border-radius: 5px;
-    position: relative;
+    margin-top: 75vh;
+    margin-bottom: 5vh;
 }
 
 .window-header {
-    background: linear-gradient(#323333,#2a2b2b);
-    color: #ffffff;
+    background-color: rgb(18, 26, 33);
+    color: #ebf3f5;
 }
 
 .window-header_main {
@@ -290,6 +360,7 @@ li {
     justify-content: flex-end;
     margin: 0;
     height: 50px;
+    padding: 0.5rem;
 }
 
 .window-header_close img {
@@ -307,8 +378,7 @@ li {
 .window-header_main_title {
     font-size: 2rem;
     font-weight: 900;
-    /* color: #16F6F6; */
-    color: #ffffff;
+    color: #ebf3f5;
     margin: 0;
 }
 
@@ -324,7 +394,7 @@ li {
 }
 
 .window-body_title {
-    background-color: #29bad7;
+    background-color: rgb(17, 146, 238);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -333,14 +403,14 @@ li {
 
 .window-body_title h4 {
     margin-left: 1rem;
-    color: #ffffff;
+    color: #ebf3f5;
 }
 
 .window-body_description {
     text-align: justify;
     margin-left: 2.5rem;
     margin-bottom: 2rem;
-    color: #5c5e5e;    /*#323333*/
+    color: #323333;    
 }
 
 .window-body_description h5 {
@@ -354,21 +424,14 @@ li {
     line-height: 0.5rem;
 }
 
-.show {
-    pointer-events: auto;
-    /* Muestra la ventana */
-    opacity: 1;
-}
-
-/* -------------------- CONTACT -------------------- */
+/* -------------------- SECTION CONTACT -------------------- */
 
 .contact {
     padding: 1rem 1.5rem 5rem 1.5rem;
-    background-color: #29bad7;
 }
 
 .contact h2 {
-    color: #ffffff;
+    color: #ebf3f5;
 }
 
 .contact-form {
@@ -386,7 +449,7 @@ input, textarea {
     border-radius: 5px;
     padding: 5px;
     outline: none;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 textarea {
@@ -401,15 +464,21 @@ textarea {
     padding: 0.5rem 2rem;
     cursor: pointer;
     font-size: 16px;
-    border: 1px solid #fe9141;
-    background-color: #fe9141;
-    margin: 1.5rem 0;
+    font-weight: 600;
+    border: 1px solid rgb(17, 146, 238);
+    background-color: rgb(17, 146, 238);
+    margin: 1rem 0 1.5rem 0;
     border-radius: 5px;
-    color: #ffffff;
+    color: #fafafa;
+}
+
+.contact-form button:hover {
+    border: 1px solid rgb(1, 112, 173);
+    background-color: rgb(2, 102, 173);
 }
 
 .redes {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -445,31 +514,33 @@ textarea {
 /* -------------------- FOOTER -------------------- */
 
 .footer {
-    /* background-color: #0c0c0c; */
-    background: linear-gradient(#323333,#2a2b2b);
+    background-color: #0c0c0c;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 1.5rem 2.5rem;
-    color: white;
+    color: #ebf3f5;
 }
 
 .footer-details {
     display: flex;
     align-items: center;
-    font-size: 0.9rem;
-}
-
-.footer-details span {
-    /* color: #00ffff; */
-    color: #fe9141;
+    font-size: 0.8rem;
 }
 
 .footer-details img {
     width: 20px;
     height: 20px;
     margin-right: 5px;
+}
+
+.footer-details a {
+    text-decoration: none;
+}
+
+.footer-details span {
+    color: rgb(17, 146, 238);
 }
 
 /* -------------------- DIV WRAPPER -------------------- */
@@ -485,7 +556,7 @@ textarea {
     flex-wrap: inherit;
 }
 
-/* ------------------------------ 1024px ------------------------------ */
+/* ---------------------------- 1024px ---------------------------- */
 
 @media screen and (max-width:1024px) {
     .experience-mainTitle {
@@ -518,7 +589,7 @@ textarea {
     }
 }
 
-/* ------------------------------ 768px ------------------------------ */
+/* ---------------------------- 768px ---------------------------- */
 
 @media screen and (max-width:768px) {
     .container_menu-hamburger {
@@ -541,7 +612,7 @@ textarea {
     .menu {
         position: fixed;
         z-index: 300;
-        background-color:rgba(0, 0, 0, 0.329);
+        background-color:rgba(0, 0, 0, 0.3);
         top: 0;
         left: -1000vw;
         right: 0;
@@ -602,7 +673,6 @@ textarea {
     }
 
     .projects h2 {
-        /* padding: 2.5rem 0 1.5rem 0rem; */
         padding: 1.3rem 0;
         font-size: 1.5rem;
     }
@@ -622,7 +692,7 @@ textarea {
     }
 }
 
-/* ------------------------------ 572px ------------------------------ */
+/* ---------------------------- 572px ---------------------------- */
 
 @media screen and (max-width:572px) {
     h1 {
@@ -661,7 +731,7 @@ textarea {
     }
 }
 
-/* ------------------------------ 480px ------------------------------ */
+/* ---------------------------- 480px ---------------------------- */
 
 @media screen and (max-width:480px) {
     .main {
@@ -723,7 +793,7 @@ textarea {
     }
 }
 
-/* ------------------------------ 320px ------------------------------ */
+/* ---------------------------- 320px ---------------------------- */
 
 @media screen and (max-width:320px) {
     .main {

@@ -30,9 +30,11 @@ function WatchHidden() {
     }
 }
 
-/* -------------------- Ventana modal curriculum (resume) -------------------- */
+/* ---------------- Ventana no modal curriculum (resume) ---------------- */
+
 var window_resume = document.getElementById("window-resume");
 var resume = document.getElementById("resume")
 var close_resume = document.getElementById("close-resume");
+
 resume.addEventListener("click", () => window_resume.classList.add("show"));
 close_resume.addEventListener("click", () => window_resume.classList.remove("show"));
