@@ -9,7 +9,7 @@ const menu_profesional = document.querySelector('.menu');
 const button_hamburger = document.querySelector('#hamburger');
 
 // Escucha el evento si esta en true o false
-changes.addListener(validation);
+changes.addListener(validation); // Por revisarlo
 validation(changes);
 
 function validation(event) {

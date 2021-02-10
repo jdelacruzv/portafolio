@@ -7,7 +7,7 @@ body {
     font-family: "Raleway", sans-serif;
     margin: 0px;
     font-size: 16px;
-    background-image: url(../img/fondo-animado.gif);
+    background-image: url(../img/background.gif);
 }
 
 h1, h2 {    
@@ -526,7 +526,7 @@ textarea {
 .footer-details {
     display: flex;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .footer-details img {
@@ -868,18 +868,4 @@ textarea {
     .contact, .footer {
         padding: 1rem 1rem 0.5rem 1rem;
     }
-}
-
-.video_youtube {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.video_youtube:hover {
-    z-index: 200;
 }
