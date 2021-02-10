@@ -164,7 +164,7 @@ li {
     font-weight: 100;
 }
 
-/* -------------------- SECTION PROJECTS -------------------- */
+/* ----------------- SECTION PROJECTS ----------------- */
 
 .projects {
     padding: 1rem 1.5rem 5rem 1.5rem;
@@ -224,7 +224,7 @@ li {
     background-color: rgb(2, 102, 173);
 }
 
-/* -------------------- SECTION SKILLS -------------------- */
+/* ----------------- SECTION SKILLS ----------------- */
 
 .skills {
     padding: 1rem 1.5rem 5rem 1.5rem;
@@ -251,7 +251,7 @@ li {
     border-radius: 15px;
 }
 
-/* -------------------- SECTION EXPERIENCES -------------------- */
+/* ----------------- SECTION EXPERIENCES ----------------- */
 
 .experiences {
     padding: 1rem 1.5rem 5rem 1.5rem;
@@ -312,7 +312,7 @@ h2 {
 }
 
 
-/* ------------------- SECTION RESUME MODAL ------------------- */
+/* ---------------- SECTION RESUME MODAL ---------------- */
 .container-modal {
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
@@ -424,7 +424,7 @@ h2 {
     line-height: 0.5rem;
 }
 
-/* -------------------- SECTION CONTACT -------------------- */
+/* ----------------- SECTION CONTACT ----------------- */
 
 .contact {
     padding: 1rem 1.5rem 5rem 1.5rem;
@@ -458,6 +458,12 @@ textarea {
     max-width: 25rem;
     min-height: 8rem;
     max-height: 8rem;
+}
+
+.captcha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-form button {
@@ -543,7 +549,7 @@ textarea {
     color: rgb(17, 146, 238);
 }
 
-/* -------------------- DIV WRAPPER -------------------- */
+/* ----------------- DIV WRAPPER ----------------- */
 
 .wrapper {
     max-width: 1024px;  /* Desde 0 a 1024 */
@@ -556,7 +562,7 @@ textarea {
     flex-wrap: inherit;
 }
 
-/* ---------------------------- 1024px ---------------------------- */
+/* ------------------------ 1024px ------------------------ */
 
 @media screen and (max-width:1024px) {
     .experience-mainTitle {
@@ -589,7 +595,7 @@ textarea {
     }
 }
 
-/* ---------------------------- 768px ---------------------------- */
+/* ------------------------ 768px ------------------------ */
 
 @media screen and (max-width:768px) {
     .container_menu-hamburger {
@@ -692,7 +698,7 @@ textarea {
     }
 }
 
-/* ---------------------------- 572px ---------------------------- */
+/* ------------------------ 572px ------------------------ */
 
 @media screen and (max-width:572px) {
     h1 {
@@ -731,7 +737,7 @@ textarea {
     }
 }
 
-/* ---------------------------- 480px ---------------------------- */
+/* ------------------------ 480px ------------------------ */
 
 @media screen and (max-width:480px) {
     .main {
@@ -793,7 +799,7 @@ textarea {
     }
 }
 
-/* ---------------------------- 320px ---------------------------- */
+/* ------------------------ 320px ------------------------ */
 
 @media screen and (max-width:320px) {
     .main {

@@ -188,10 +188,11 @@
       <div class="wrapper">
         <hr>
         <h2>Contacto</h2>
-        <form name="contact" method="POST" class="contact-form" data-netlify="true">
+        <form name="contact" method="POST" class="contact-form" data-netlify-recaptcha="true" data-netlify="true">
           <input type="text" name="name" placeholder="Nombre" required/>
           <input type="email" name="email" placeholder="Email" required/>
           <textarea name="message" placeholder="Mensaje..." required></textarea>
+          <div class="captcha" data-netlify-recaptcha="true"></div>
           <button type="submit">Enviar</button>
         </form>
         <div class="redes">
