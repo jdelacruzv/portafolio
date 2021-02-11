@@ -440,10 +440,15 @@ h2 {
     align-items: center;
 }
 
+.hidden {
+    display: none;
+    color: #ebf3f5;
+}
+
 input, textarea {
     width: 25rem;
     height: 1.5rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     border-color: transparent;
     border-style: solid;
     border-radius: 5px;
@@ -458,12 +463,6 @@ textarea {
     max-width: 25rem;
     min-height: 8rem;
     max-height: 8rem;
-}
-
-.captcha {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
 }
 
 .contact-form button {

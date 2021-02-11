@@ -38,3 +38,9 @@ var close_resume = document.getElementById("close-resume");
 
 resume.addEventListener("click", () => window_resume.classList.add("show"));
 close_resume.addEventListener("click", () => window_resume.classList.remove("show"));
+
+/* ---------------- Validación del formulario ---------------- */
+
+
+
+
