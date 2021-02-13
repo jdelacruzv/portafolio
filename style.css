@@ -1,0 +1,674 @@
+/* Suaviza efecto entre el origen/destino, por defecto es auto */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0px;
+    font-size: 16px;
+    background-image: url(../img/background.gif);
+}
+
+h1, h2 {    
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5rem;
+    /* color: #ebf3f5; */
+    color: #EA4C89;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: rgb(18, 26, 33);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5rem 0 4rem 0rem;
+}
+
+/* -------------------- MENU HAMBURGER -------------------- */
+
+.container_menu-hamburger {  
+    margin: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 8px;
+    right: 8px;
+    display: none;
+}
+
+.hamburger_menu {            
+    width: 40px;
+    height: 40px;
+}
+
+/* -------------------- MAIN -------------------- */
+
+.main {
+    height: 100vh; 
+    background-color: #1D2063;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+.main-details {
+    line-height: 250%;                 
+    font-size: 1.5rem;                   
+    color: #ebf3f5;
+    margin: 0;
+}
+
+.main-details p {
+    letter-spacing: 0.1rem;                                
+    margin: 0;
+    position: relative;
+}
+
+.main-details span {
+    position: absolute;
+    right: 0;
+    width: 0;
+    border-left: 1px solid #ebf3f5;
+    background-color: #1D2063;
+    animation: machine 5s infinite alternate steps(90);
+}
+
+@keyframes machine {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0;
+    }
+}
+
+.main-image {
+    width: 40%;
+    margin: 0;
+}
+
+.main-image figure {
+    width: 100%;
+    overflow: hidden;
+    margin: inherit;
+}
+
+/* -------------------- HEADER -------------------- */
+
+.header {
+    /* background-color: rgb(17, 146, 238); */
+    background-color: #EA4C89;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: sticky;
+    top: 0;
+}
+
+.header p a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    margin-left: 0.2rem;
+    color: #ffffff;
+}
+
+.header p a:hover {
+    font-size: 1.6rem;
+}
+
+
+.header p span {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-left: 0.5rem;
+    /* color: rgb(18, 26, 33); */
+    color: #1D2063;
+    
+}
+
+/* -------------------- MENU -------------------- */
+
+.menu {
+    height: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    height: inherit;
+}
+
+li {
+    height: inherit;
+}
+
+.menu a:hover {
+    /* background-color: rgba(2, 118, 173, 0.5); */
+    background-color: #dd1260;
+    color: #ffffff;
+}
+
+.link {
+    /* Quita el underline que viene por defecto */
+    text-decoration: none;
+    color: #ebf3f5;
+    display: flex;
+    height: inherit;
+    align-items: center;     
+    padding: 0 1rem;
+    font-weight: 100;
+}
+
+/* ----------------- SECTION PROJECTS ----------------- */
+
+.projects {
+    padding: 1rem 1.5rem 5rem 1.5rem;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project-container {
+    width: 32%;
+    margin: 0 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 5px #ffffff;
+    margin-bottom: 1rem;
+    transition: 0.2s;
+}
+
+.project-container img:hover {
+    opacity: 0.5;
+    cursor: zoom-in;
+    transform: scale(0.9);
+}
+
+.project-btn_github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-btn_github a {
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    /* border: 1px solid rgb(17, 146, 238);
+    background-color: rgb(17, 146, 238); */
+    border: 1px solid #EA4C89;
+    background-color: #EA4C89;
+    border-radius: 5px;
+    color: #fafafa;
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+.project-btn_github a:hover {
+    /* border: 1px solid rgb(1, 112, 173);
+    background-color: rgb(2, 102, 173); */
+    border: 1px solid #970a40;
+    background-color: #970a40;
+}
+
+/* ----------------- SECTION SKILLS ----------------- */
+
+.skills {
+    padding: 1rem 1.5rem 5rem 1.5rem;
+}
+
+.skills h2 {
+    color: #ebf3f5;
+}
+
+.skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill-container_image {
+    width: 15%;
+    margin-bottom: 1.7rem;
+    cursor: pointer;
+}
+
+.skill-image {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* ----------------- SECTION EXPERIENCES ----------------- */
+
+.experiences {
+    padding: 1rem 1.5rem 5rem 1.5rem;
+}
+
+.experience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h2 {
+    color: #ebf3f5;
+}
+
+.experience-container {
+    width: 25%;
+    /* height: auto; */
+    margin: 0;
+}
+
+.zoom-in {
+    width: 100%;
+    box-shadow: 0px 0px 8px #ebf3f5;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.zoom-in:hover {
+    opacity: 0.5;
+    cursor: zoom-in;
+    transform: scale(1.1);
+}
+
+.download-resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.download-resume a {
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid rgb(17, 146, 238);
+    background-color: rgb(17, 146, 238);
+    border-radius: 5px;
+    color: #fafafa;
+    margin: 1rem 0;
+}
+
+.download-resume a:hover {
+    border: 1px solid rgb(1, 112, 173);
+    background-color: rgb(2, 102, 173);
+}
+
+
+/* ---------------- SECTION RESUME MODAL ---------------- */
+
+.container-modal {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Controla si puede o no recibir eventos del cursor */
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+	width: 100%;
+	height: 100vh; 
+    overflow: auto; 
+    z-index: 800;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    pointer-events: auto;
+    /* Muestra la ventana */
+    opacity: 1;
+}
+
+.window-modal {
+    background-color: #f5f9fa;
+    width: 45rem;
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 75vh;
+    margin-bottom: 5vh;
+}
+
+.window-header {
+    background-color: rgb(18, 26, 33);
+    color: #ebf3f5;
+}
+
+.window-header_main {
+    text-align: center;
+}
+
+.window-header_close {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    height: 50px;
+    padding: 0.5rem;
+}
+
+.window-header_close img {
+    padding: 0.2rem;
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.window-header_close img:hover {
+    opacity: 0.5;
+}
+
+.window-header_main_title {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ebf3f5;
+    margin: 0;
+}
+
+.window-header_main_address {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.window-header_main_description {
+    font-size: 1rem;
+    padding: 1rem 0 2.5rem 0;
+    margin: 0;
+}
+
+.window-body_title {
+    background-color: rgb(17, 146, 238);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+}
+
+.window-body_title h4 {
+    margin-left: 1rem;
+    color: #ebf3f5;
+}
+
+.window-body_description {
+    text-align: justify;
+    margin-left: 2.5rem;
+    margin-bottom: 2rem;
+    color: #323333;    
+}
+
+.window-body_description h5 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.window-body_description p {
+    margin-left: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 0.5rem;
+}
+
+/* ----------------- SECTION CONTACT ----------------- */
+
+.contact {
+    padding: 1rem 1.5rem 5rem 1.5rem;
+}
+
+.contact h2 {
+    color: #ebf3f5;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+    color: #ebf3f5;
+}
+
+input, textarea {
+    width: 30rem;
+    height: 1.5rem;
+    font-size: 0.9rem;
+    border-color: transparent;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+textarea {
+    /* No se pueda estirar la caja */
+    min-width: 30rem;
+    max-width: 30rem;
+    min-height: 8rem;
+    max-height: 8rem;
+}
+
+.contact-form button {
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid rgb(17, 146, 238);
+    background-color: rgb(17, 146, 238);
+    margin: 2rem 0 1.5rem 0;
+    border-radius: 5px;
+    color: #fafafa;
+}
+
+.contact-form button:hover {
+    border: 1px solid rgb(1, 112, 173);
+    background-color: rgb(2, 102, 173);
+}
+
+.redes {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-link {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    
+}
+
+.redes-link.github {
+    background-image: url(../img/github.svg);
+    background-size: 50px 50px;
+}
+
+.redes-link.facebook {
+    background-image: url(../img/facebook.svg);
+    background-size: 50px 50px;
+}
+
+.redes-link.instragram {
+    background-image: url(../img/instagram.svg);
+    background-size: 50px 50px;
+}
+
+.redes-link.twitter {
+    background-image: url(../img/twitter.svg);
+    background-size: 50px 50px;
+}
+
+/* -------------------- FOOTER -------------------- */
+
+.footer {
+    padding: 1.5rem 1.5rem;
+}
+
+.footer-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-details p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.footer-details a {
+    text-decoration: none;
+    color: #EA4C89;
+}
+
+.footer-details span {
+    font-size: 0.8rem;
+    color: #ebf3f5;
+    margin-top: 5px;
+}
+
+/* ----------------- DIV WRAPPER ----------------- */
+
+.wrapper {
+    max-width: 1024px;  /* Desde 0 a 1024 */
+    flex: 1; /* flex: grow - Ajustate siempre a esos 1000px */
+    margin: 0px auto;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+/* ----------------- MEDIA QUERIES ----------------- */
+
+@media screen and (max-width: 768px) {
+    .container_menu-hamburger {
+        display: block;
+    }
+
+    .menu {
+        background-color:rgba(0, 0, 0, 0.329);
+        position: fixed;
+        top: 0;
+        left: -1000vw;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        z-index: 900;
+    }
+
+    .menu.menu_active {
+        left: 0;
+    }
+
+    ul {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .link {
+        justify-content: center;
+        margin: 0px 0px;
+        padding: 10px 0px;
+        font-size: 2rem;
+        color: rgb(255, 0, 0);
+        text-shadow: 5px 5px 5px crimson;
+    }
+
+    .link:hover {
+        background-color: #06236d56;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-details {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .main-image {
+        margin: auto;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .project-container {
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+
+    .skill-container_image {
+        width: 25%;
+    }
+
+    .experience {
+        display: block;
+    }
+
+    .experience-container {
+        width: 40%;
+        margin: 0 auto 5% auto;
+    }
+
+    input, textarea {
+        width: 80%;
+    }
+    
+    textarea {
+        /* No se pueda estirar la caja */
+        min-width: 80%;
+        max-width: 80%;
+        min-height: 8rem;
+        max-height: 8rem;
+    }
+}

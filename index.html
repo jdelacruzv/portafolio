@@ -7,8 +7,7 @@
     <meta name="autors" content="Jose De La Cruz" />
     <title>José De La Cruz - Developer</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="style.css"/>
   </head>
   
   <body>
@@ -17,13 +16,16 @@
     </figure>
 
     <section class="main">
-      <div class="wrapper">
         <div class="main-details">
-          <p>Hola, soy...</p>
+          <p>Hola, soy:</p>
           <h1>José De La Cruz</h1>
           <p>Desarrollador web frontend...<span>&#160;</span></p>
         </div>
-      </div>
+        <div class="main-image">
+          <figure>
+            <img src="img/main.svg" alt="Desarollo web">
+          </figure>
+        </div>
     </section>
 
     <header id="navbar" class="header">
@@ -60,7 +62,7 @@
           </figure>
         </article>
         <div class="project-btn_github">
-          <a href="https://github.com/jdelacruzv" target="_blank" download>Visitar más proyectos en GitHub</a>        
+          <a href="https://github.com/jdelacruzv" target="_blank" download>Visita más proyectos en GitHub</a>        
         </div>
       </div>
     </section>
@@ -206,16 +208,67 @@
         </div>
       </div>
     </section>
-
+    
     <footer class="footer">
       <div class="wrapper">
+        <hr>
         <div class="footer-details">
-          <img src="img/logo.png" alt="icono mundo celeste">
-          <p>Desarrollado y diseñado por <a href="https://github.com/jdelacruzv" target="_blank"><span>José De La Cruz </span></a> © 2020 - 2021</p>
+          <p>
+            <a href="https://github.com/jdelacruzv" target="_blank">
+              © José De La Cruz</a>
+          </p>
+          <span>Desarrollado web frontend</span>
         </div>
       </div>
     </footer>    
 
-    <script src="js/main.js"></script>
+    <script>
+      /* ----------------- Efecto del menu hamburguesa ----------------- */
+
+      // Captura todos los medias queries que son de 768px para abajo
+      const changes = window.matchMedia('screen and (max-width:768px)');
+
+      // Captura la clase .menu y le asigna a la variable menu
+      const menu_pro = document.querySelector('.menu');
+
+      const btn_hamburger = document.querySelector('#hamburger');
+
+      // Escucha el evento si esta en true o false
+      changes.addListener(validation);
+
+      validation(changes);
+
+      function validation(event) {
+        if(event.matches) {
+          btn_hamburger.addEventListener('click', watchHidden);
+        }
+        else {
+          btn_hamburger.removeEventListener('click', watchHidden);
+        }
+      }
+
+      function watchHidden() {
+        if(menu_pro.classList.contains('menu_active')) {
+          menu_pro.classList.remove('menu_active');
+        }
+        else {
+          menu_pro.classList.add('menu_active');
+        }
+      }
+
+      /* ------------- Ventana no modal curriculum (resume) ------------- */
+
+      var window_resume = document.getElementById("window-resume");
+      var resume = document.getElementById("resume");
+      var close_resume = document.getElementById("close-resume");
+
+      resume.addEventListener("click", () => {
+        window_resume.classList.add("show");
+      })
+
+      close_resume.addEventListener("click", () => {
+        window_resume.classList.remove("show");
+      })
+    </script>
   </body>
 </html>
