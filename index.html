@@ -11,11 +11,7 @@
   </head>
   
   <body>
-    <figure class="container_menu-hamburger">
-      <img id="hamburger" class="hamburger_menu" src="img/hamburger_menu.png" alt="Menú de hamburguesa"/>
-    </figure>
-
-    <section class="main">
+      <section class="main">
         <div class="main-details">
           <p>Hola, soy:</p>
           <h1>José De La Cruz</h1>
@@ -28,19 +24,26 @@
         </div>
     </section>
 
-    <header id="navbar" class="header">
+    <header class="header">
       <div class="wrapper">      
-        <p>
+        <p class="hidden-name">
           <a href="">José De La Cruz<span>Developer</span></a>
         </p>
         <nav class="menu">
-          <ul>
-            <li><a class="link" href="#proyecto">Proyectos</a></li>
-            <li><a class="link" href="#habilidades">Habilidades</a></li>
-            <li><a class="link" href="#experiencia">Experiencia</a></li>
-            <li><a class="link" href="#contacto">Contacto</a></li>
+          <ul class="menu-items">
+            <li><a href="#proyecto">Proyectos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
+        <!-- https://www.youtube.com/watch?v=vFgtwsZVybY 
+        https://www.youtube.com/watch?v=peVc8Gv0870-->
+        <div class="btn-menu">
+          <div class="linea-1"></div>
+          <div class="linea-2"></div>
+          <div class="linea-3"></div>
+        </div>
       </div>
     </header>
     
@@ -96,6 +99,9 @@
           <figure class="skill-container_image">
             <img class="skill-image" src="img/vue.svg" alt="Logo Vue" title="Vue.js">
           </figure>
+          <figure class="skill-container_image">
+            <img class="skill-image" src="img/terminal.svg" alt="Logo bash" title="Bash">
+          </figure>
         </article>
       </div>
     </section>
@@ -105,14 +111,14 @@
         <hr>
         <h2>Experiencia</h2>
         <article id="resume" class="experience">
-          <figure class="experience-container">
-            <img class="zoom-in" src="img/maestro.jpg" alt="Logo empresa Maestro Perú" title="Clikc aquí">
+          <figure class="experience-container_image">
+            <img class="experience-image" src="img/freelance.jpg" alt="Logo de freelance" title="Clikc aquí">
           </figure>
-          <figure class="experience-container">
-              <img class="zoom-in" src="img/multitop.jpg" alt="Logo empresa Multitop" title="Clikc aquí">
+          <figure class="experience-container_image">
+            <img class="experience-image" src="img/multitop.jpg" alt="Logo empresa Multitop" title="Clikc aquí">
           </figure>
-          <figure class="experience-container">
-            <img class="zoom-in" src="img/freelance.jpg" alt="Logo de freelance" title="Clikc aquí">
+          <figure class="experience-container_image">
+            <img class="experience-image" src="img/maestro.jpg" alt="Logo empresa Maestro Perú" title="Clikc aquí">
           </figure>
         </article>
         <div class="download-resume">
@@ -217,58 +223,11 @@
             <a href="https://github.com/jdelacruzv" target="_blank">
               © José De La Cruz</a>
           </p>
-          <span>Desarrollado web frontend</span>
+          <span>Desarrollador web frontend</span>
         </div>
       </div>
     </footer>    
 
-    <script>
-      /* ----------------- Efecto del menu hamburguesa ----------------- */
-
-      // Captura todos los medias queries que son de 768px para abajo
-      const changes = window.matchMedia('screen and (max-width:768px)');
-
-      // Captura la clase .menu y le asigna a la variable menu
-      const menu_pro = document.querySelector('.menu');
-
-      const btn_hamburger = document.querySelector('#hamburger');
-
-      // Escucha el evento si esta en true o false
-      changes.addListener(validation);
-
-      validation(changes);
-
-      function validation(event) {
-        if(event.matches) {
-          btn_hamburger.addEventListener('click', watchHidden);
-        }
-        else {
-          btn_hamburger.removeEventListener('click', watchHidden);
-        }
-      }
-
-      function watchHidden() {
-        if(menu_pro.classList.contains('menu_active')) {
-          menu_pro.classList.remove('menu_active');
-        }
-        else {
-          menu_pro.classList.add('menu_active');
-        }
-      }
-
-      /* ------------- Ventana no modal curriculum (resume) ------------- */
-
-      var window_resume = document.getElementById("window-resume");
-      var resume = document.getElementById("resume");
-      var close_resume = document.getElementById("close-resume");
-
-      resume.addEventListener("click", () => {
-        window_resume.classList.add("show");
-      })
-
-      close_resume.addEventListener("click", () => {
-        window_resume.classList.remove("show");
-      })
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
