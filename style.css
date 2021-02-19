@@ -15,15 +15,6 @@ body {
     background-image: url(../img/background.gif);
 }
 
-h1, h2 {    
-    margin: 0;
-}
-
-h1 {
-    font-size: 3.5rem;
-    color: #EA4C89;
-}
-
 h2 {
     font-size: 2rem;
     font-weight: 100;
@@ -32,40 +23,45 @@ h2 {
     text-align: center;
     text-transform: uppercase;
     padding: 5rem 0 4rem 0rem;
+    margin: 0;
 }
 
 /* -------------------- MAIN -------------------- */
 
 .main {
-    height: 100vh; 
-    background-color: #1D2063;
+    height: 100vh;
+    background-image: url(../img/main.gif);
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0 10px;
 }
 
-.main-details {
-    line-height: 250%;                 
-    font-size: 1.5rem;                   
-    color: #ebf3f5;
-    margin: 0;
+.main-name {
+    font-size: 2rem;                   
+    text-align: center;
+    color: #ffffff;
 }
 
-.main-details p {
+.main-name p {
     letter-spacing: 0.1rem;                                
     margin: 0;
     position: relative;
 }
 
-.main-details span {
+.main-name h1 {
+    font-size: 4rem;
+    color: #2BCF02; 
+    margin: 0.2rem 0;
+}
+
+.main-name span {
     position: absolute;
     right: 0;
-    width: 0;
     border-left: 1px solid #ebf3f5;
-    background-color: #1D2063;
+    background-color: #000000;
     animation: machine 5s infinite alternate steps(90);
 }
 
@@ -79,21 +75,34 @@ h2 {
     }
 }
 
-.main-image {
-    width: 40%;
-    margin: 0;
-    overflow: hidden;
+.main-project {
+    margin-top: 2.5rem; 
 }
 
-.main-image figure {
-    width: 100%;
-    margin: inherit;
+.main-project a {
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    border: 1px solid #2BCF02;
+    background-color: #000000;
+    color: #ffffff;    
+}
+
+.main-project span {
+    margin-left: 5px;
+    font-size: 1.2rem;
+}
+
+.main-project a:hover {
+    font-size: 1.2rem;
+    box-shadow: 1px 1px 10px #2BCF02;
 }
 
 /* -------------------- HEADER -------------------- */
 
 .header {
-    background-color: #EA4C89;
+    background-color: #198754;
+    border-bottom: 1px solid #fcfcfc;
     box-shadow: 0px 2px 10px -2px #ebf3f5;
     display: flex;
     flex-wrap: wrap;
@@ -155,7 +164,7 @@ h2 {
 }
 
 .menu-items li:hover, li:active {
-    background-color: #dd1260;
+    background-color: #10643d;
     transition: 0.4s;
 }
 
@@ -203,7 +212,6 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    /* align-items: center; */
 }
 
 .project-container {
@@ -241,8 +249,8 @@ h2 {
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
-    border: 1px solid #EA4C89;
-    background-color: #EA4C89;
+    border: 1px solid #198754;
+    background-color: #198754;
     border-radius: 5px;
     color: #fafafa;
     margin: 2rem 0 1rem 0;
@@ -250,8 +258,8 @@ h2 {
 }
 
 .project-btn_github a:hover {
-    border: 1px solid #970a40;
-    background-color: #970a40;
+    border: 1px solid #10643d;
+    background-color: #10643d;
 }
 
 /* ----------------- SECTION SKILLS ----------------- */
@@ -328,17 +336,17 @@ h2 {
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
-    border: 1px solid #EA4C89;
-    background-color: #EA4C89;
+    border: 1px solid #198754;
+    background-color: #198754;
     border-radius: 5px;
-    color: #fafafa;
+    color: #ffffff;
     margin: 1rem 0;
     text-align: center;
 }
 
 .download-resume a:hover {
-    border: 1px solid #970a40;
-    background-color: #970a40;
+    border: 1px solid #10643d;
+    background-color: #10643d;
 }
 
 
@@ -354,7 +362,7 @@ h2 {
     position: fixed;
     top: 0;
     left: 0;
-	width: 100%;
+	width: 100vw;
 	height: 100vh; 
     overflow: auto; 
     z-index: 800;
@@ -364,22 +372,21 @@ h2 {
 
 .show-modal {
     pointer-events: auto;
-    /* Muestra la ventana */
     opacity: 1;
 }
 
 .window-modal {
     background-color: #f5f9fa;
-    width: 45rem;
-    max-width: 100%;
-    border-radius: 5px;
-    margin-top: calc(100vh - 70px);
+    width: 42rem;
+    /* margin-top: calc(100vh - 60px); */
+    margin-top: 100vh;
     margin-bottom: 5vh;
 }
 
 .window-header {
     background-color: rgb(18, 26, 33);
     color: #ebf3f5;
+    width: inherit;
 }
 
 .window-header_main {
@@ -389,6 +396,7 @@ h2 {
 .window-header_close {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     margin: 0;
     height: 50px;
     padding: 0.5rem;
@@ -424,8 +432,12 @@ h2 {
     margin: 0;
 }
 
+.window-body {
+    width: inherit;
+}
+
 .window-body_title {
-    background-color: #EA4C89;
+    background-color: #198754;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -438,9 +450,7 @@ h2 {
 }
 
 .window-body_description {
-    text-align: justify;
-    margin-left: 2.5rem;
-    margin-bottom: 2rem;
+    padding: 0 2.5rem 2rem 2.5rem;
     color: #323333;    
 }
 
@@ -501,16 +511,16 @@ textarea {
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
-    border: 1px solid #EA4C89;
-    background-color: #EA4C89;
+    border: 1px solid #198754;
+    background-color: #198754;
     margin: 2rem 0 1.5rem 0;
     border-radius: 5px;
-    color: #fafafa;
+    color: #ffffff;
 }
 
 .contact-form button:hover {
-    border: 1px solid #970a40;
-    background-color: #970a40;
+    border: 1px solid #10643d;
+    background-color: #10643d;
 }
 
 .redes {
@@ -561,17 +571,19 @@ textarea {
     align-items: center;
     margin-top: 20px;
     letter-spacing: 0.05rem;
+    text-align: center;
 }
 
 .footer-details p {
     margin: 0;
-    font-size: 1.1rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .footer-details a {
     text-decoration: none;
-    color: #EA4C89;
+    color: #198754;
+    
 }
 
 .footer-details span {
@@ -621,8 +633,8 @@ textarea {
         right: 0;
         bottom: 0;
         width: 100vw;
-        height: 50vh;
-        background-color:rgb(248, 124, 172);
+        height: 100vh;
+        background-color:rgba(41, 41, 41, 0.9);
         text-align: center;
         transition: all 1s;
         flex-direction: column;
@@ -635,24 +647,12 @@ textarea {
     }
 
     .menu-items li {
-        margin: 0.5rem 0 0 0;
+        margin-top: 2rem;
         line-height: 2rem;
-    }
-
-    .main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .main-details {
-        text-align: center;
-        margin-top: 5%;
-    }
-
-    .main-image {
-        margin: auto;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border-radius: 0;
     }
 
     .project-container {
@@ -674,6 +674,21 @@ textarea {
         margin: 0px auto 3rem auto;
     }
 
+    .window-modal {
+        margin-top: auto;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .window-header_main {
+        padding: 0 5vw;
+    }
+
+    .window-body, .window-header {
+        width: auto;
+        height: auto;
+    }
+
     input, textarea {
         width: 80%;
     }
@@ -687,20 +702,29 @@ textarea {
     }
 }
 
-@media screen and (max-width: 575px) {
-    .main-details {
+@media screen and (max-width: 600px) {
+    .main-name p {
+        font-size: 1.2rem;
+    }
+
+    .main-name h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .hidden-name span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main-name p {
         font-size: 1rem;
-        line-height: 50px;
     }
 
-    .main-details h1 {
-        font-size: 2.5rem;
-        line-height: 50px;
-    }
-
-    .main-image {
-        width: 240px;
-        margin: auto;
+    .main-name h1 {
+        font-size: 2rem;
     }
 
     .redes-link {
@@ -709,8 +733,16 @@ textarea {
     }
 }
 
-@media screen and (max-width: 460px) {
-    .hidden-name span {
-        display: none;
+@media screen and (max-width: 300px) {
+    .main-name p {
+        font-size: 0.8rem;
+    }
+
+    .main-name h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
     }
 }

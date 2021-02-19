@@ -30,15 +30,19 @@ btn_menu.addEventListener('click', () => {
 
 // ---------------> Ventana no modal hoja de vida (resume) --------------->
 let window_resume = document.getElementById("window-resume");
+let body = document.querySelector('body');
 let resume = document.getElementById("resume");
 let close_resume = document.getElementById("close-resume");
 
 resume.addEventListener("click", () => {
-    window_resume.classList.add("show-modal")
+    window_resume.classList.add("show-modal");
+    body.style.overflow = 'hidden';
+
 });
 
 close_resume.addEventListener("click", () => {
     window_resume.classList.remove("show-modal")
+    body.style.overflow = 'visible';
 });
 
 
