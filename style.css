@@ -160,7 +160,6 @@ h2 {
     text-decoration: none;
     color: #ebf3f5;
     padding: 0.5rem 0.8rem;
-    font-weight: 100;
 }
 
 .menu-items li:hover, li:active {
@@ -638,7 +637,6 @@ textarea {
         text-align: center;
         transition: all 1s;
         flex-direction: column;
-        /* display: none; */
     }
 
     .menu-items.show {
