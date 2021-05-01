@@ -216,7 +216,7 @@ h2 {
 
 .project-container {
     width: 30%;
-    margin: 0 0.2rem;
+    margin: 0 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -227,14 +227,14 @@ h2 {
     width: 100%;
     height: auto;
     box-shadow: 0px 0px 5px #ffffff;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     transition: 0.2s;
 }
 
 .project-container img:hover {
-    opacity: 0.5;
+    opacity: 0.8;
     cursor: zoom-in;
-    transform: scale(0.9);
+    transform: scale(1.1);
 }
 
 .project-btn_github {
@@ -279,8 +279,8 @@ h2 {
 }
 
 .skill-container_image {
-    width: 15%;
-    margin: 1rem;
+    width: 10rem;
+    margin: 1rem 2rem;
     cursor: pointer;
 }
 
@@ -561,7 +561,7 @@ textarea {
 /* -------------------- FOOTER -------------------- */
 
 .footer {
-    padding: 1.5rem 1.5rem;
+    padding: 1.5rem 0;
 }
 
 .footer-details {
@@ -743,5 +743,9 @@ textarea {
 
     h2 {
         font-size: 1.5rem;
+    }
+
+    .contact {
+        padding: 0 0.5rem;
     }
 }
