@@ -1,4 +1,10 @@
-* {
+:root {
+    --colorText: #49454567;
+}
+
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,8 +18,9 @@ html {
 body {
     font-family: "Raleway", sans-serif;
     font-size: 16px;
-    background-image: url(../img/background.gif);
-    background-color: #000000;
+    background-color: #010101;
+    background-image: linear-gradient(147deg, #010101 0%, #131313 74%);
+
 }
 
 h2 {
@@ -41,20 +48,20 @@ h2 {
 }
 
 .main-name {
-    font-size: 2rem;                   
+    font-size: 2rem;
     text-align: center;
     color: #ffffff;
 }
 
 .main-name p {
-    letter-spacing: 0.1rem;                                
+    letter-spacing: 0.1rem;
     margin: 0;
     position: relative;
 }
 
 .main-name h1 {
     font-size: 4rem;
-    color: #2BCF02; 
+    color: #2BCF02;
     margin: 0.2rem 0;
 }
 
@@ -77,7 +84,7 @@ h2 {
 }
 
 .main-project {
-    margin-top: 2.5rem; 
+    margin-top: 2.5rem;
 }
 
 .main-project a {
@@ -86,7 +93,8 @@ h2 {
     cursor: pointer;
     border: 1px solid #2BCF02;
     background-color: #000000;
-    color: #ffffff;    
+    color: #ffffff;
+    border-radius: 50px;
 }
 
 .main-project span {
@@ -112,6 +120,7 @@ h2 {
     height: 60px;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .hidden-name {
@@ -135,7 +144,7 @@ h2 {
     font-size: 0.8rem;
     letter-spacing: 1px;
     margin-left: 0.5rem;
-    color: #1D2063;    
+    color: #1D2063;
 }
 
 /* -------------------- MENU -------------------- */
@@ -157,13 +166,13 @@ h2 {
 
 .menu-items li a {
     display: block;
-    /* Quita el underline que viene por defecto */
     text-decoration: none;
     color: #ebf3f5;
     padding: 0.5rem 0.8rem;
 }
 
-.menu-items li:hover, li:active {
+.menu-items li:hover,
+li:active {
     background-color: #10643d;
     transition: 0.4s;
 }
@@ -175,7 +184,6 @@ h2 {
     margin: 0;
     display: none;
     cursor: pointer;
-    z-index: 1000;
 }
 
 .linea-1,
@@ -191,7 +199,7 @@ h2 {
 .active .linea-1 {
     transform: rotate(-45deg) translate(-8px, 0px);
     position: absolute;
-} 
+}
 
 .active .linea-2 {
     opacity: 0;
@@ -362,9 +370,9 @@ h2 {
     position: fixed;
     top: 0;
     left: 0;
-	width: 100vw;
-	height: 100vh; 
-    overflow: auto; 
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
     z-index: 800;
     opacity: 0;
     transition: all 1s;
@@ -378,7 +386,6 @@ h2 {
 .window-modal {
     background-color: #f5f9fa;
     width: 42rem;
-    /* margin-top: calc(100vh - 60px); */
     margin-top: 100vh;
     margin-bottom: 5vh;
 }
@@ -451,7 +458,7 @@ h2 {
 
 .window-body_description {
     padding: 0 2.5rem 2rem 2.5rem;
-    color: #323333;    
+    color: #323333;
 }
 
 .window-body_description h5 {
@@ -486,40 +493,96 @@ h2 {
     color: #ebf3f5;
 }
 
-input, textarea {
-    width: 40rem;
-    height: 2rem;
-    font-size: 0.9rem;
-    border-color: transparent;
-    border-style: solid;
-    border-radius: 5px;
-    padding: 5px;
-    outline: none;
-    margin-bottom: 20px;
+.form-container {
+    width: 100%;
+    margin: auto;
 }
 
+.group {
+    position: relative;
+    margin: 0 45px 45px 45px;
+}
+
+input,
 textarea {
-    /* No se pueda estirar la caja */
-    min-width: 40rem;
-    max-width: 40rem;
-    min-height: 10rem;
-    max-height: 10rem;
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    /* border-bottom: 1px solid var(--colorText); */
+    border-bottom: 1px solid #c6c6c6;
+    resize: none;
+    z-index: 700;
 }
 
-.contact-form button {
+input:focus,
+textarea:focus {
+    outline: none;
+    color: rgb(94, 93, 93);
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    font-size: 16px;
+    color: var(--colorText);
+    color: #ebf3f5;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    position: absolute;
+    top: -14px;
+    font-size: 14px;
+    color: #198754;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar::before {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #198754;
+    transition: 0.3s ease all;
+}
+
+input:focus~.bar::before,
+textarea:focus~.bar::before {
+    width: 100%;
+}
+
+button {
+    display: block;
+    height: 50px;
+    background-color: #198754;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
     padding: 0.5rem 2rem;
-    cursor: pointer;
+    margin: 2rem auto 1.5rem auto;
     font-size: 16px;
     font-weight: 600;
-    border: 1px solid #198754;
-    background-color: #198754;
-    margin: 2rem 0 1.5rem 0;
-    border-radius: 5px;
-    color: #ffffff;
+    cursor: pointer;
 }
 
-.contact-form button:hover {
-    border: 1px solid #10643d;
+button:hover {
     background-color: #10643d;
 }
 
@@ -535,7 +598,7 @@ textarea {
     width: 50px;
     height: 50px;
     margin-left: 20px;
-    
+
 }
 
 .redes-link.github {
@@ -583,7 +646,7 @@ textarea {
 .footer-details a {
     text-decoration: none;
     color: #198754;
-    
+
 }
 
 .footer-details span {
@@ -595,8 +658,10 @@ textarea {
 /* ----------------- DIV WRAPPER ----------------- */
 
 .wrapper {
-    max-width: 1024px;  /* Desde 0 a 1024 */
-    flex: 1; /* flex: grow - Ajustate siempre a esos 1024px */
+    max-width: 1024px;
+    /* Desde 0 a 1024 */
+    flex: 1;
+    /* flex: grow - Ajustate siempre a esos 1024px */
     height: inherit;
     margin: 0px auto;
     display: inherit;
@@ -634,7 +699,7 @@ textarea {
         bottom: 0;
         width: 100vw;
         height: 100vh;
-        background-color:rgba(41, 41, 41, 0.9);
+        background-color: rgba(41, 41, 41, 0.9);
         text-align: center;
         transition: all 1s;
         flex-direction: column;
@@ -683,21 +748,10 @@ textarea {
         padding: 0 5vw;
     }
 
-    .window-body, .window-header {
+    .window-body,
+    .window-header {
         width: auto;
         height: auto;
-    }
-
-    input, textarea {
-        width: 80%;
-    }
-    
-    textarea {
-        /* No se pueda estirar la caja */
-        min-width: 80%;
-        max-width: 80%;
-        min-height: 8rem;
-        max-height: 8rem;
     }
 }
 
@@ -728,7 +782,7 @@ textarea {
 
     .redes-link {
         margin-left: 10px;
-        
+
     }
 }
 

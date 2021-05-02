@@ -15,7 +15,7 @@
         <div class="main-name">
           <p>Hola, soy:</p>
           <h1>José De La Cruz.</h1>
-          <p>Desarrollador web front-end...<span>&#160;</span></p>
+          <p>Desarrollador web frontend...<span>&#160;</span></p>
         </div>
         <div class="main-project">
           <a href="#proyecto">Ver mis proyectos <span>&#8595;</span></a>
@@ -191,14 +191,28 @@
         <hr>
         <h2>Contacto</h2>
         <form name="contact" method="POST" class="contact-form" netlify-honeypot="bot-field" data-netlify="true">
-          <!-- Campo honeypot (tarro de miel) para evitar los bots de spam -->
-          <p class="hidden">
-            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-          </p>
-          <input type="text" name="name" placeholder="Nombre" required/>
-          <input type="email" name="email" placeholder="Correo electrónico" required/>
-          <textarea name="message" placeholder="Mensaje..." required></textarea>
-          <button type="submit">Enviar</button>
+          <div class="form-container">
+            <!-- Campo honeypot (tarro de miel) para evitar los bots de spam -->
+            <p class="hidden">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+            <!-- <input type="text" name="name" placeholder="Nombre" required/>
+            <input type="email" name="email" placeholder="Correo electrónico" required/>
+            <textarea name="message" placeholder="Mensaje..." required></textarea> -->
+            <div class="group">
+              <input type="text" name="name" id="name" required><span class="bar"></span>
+              <label for="">Nombre</label>
+            </div>
+            <div class="group">
+                <input type="email" name="email" id="email" required><span class="bar"></span>
+                <label for="">Correo</label>
+            </div>
+            <div class="group">
+                <textarea name="subject" id="message" rows="3" required></textarea><span class="bar"></span>
+                <label for="">Asunto</label>
+            </div>
+            <button type="submit">Enviar mensaje</button>
+          </div>
         </form>
         <div class="redes">
           <a href="https://github.com/jdelacruzv" target="_blank" class="redes-link github"></a>
@@ -217,7 +231,7 @@
             <a href="https://github.com/jdelacruzv" target="_blank">
               José De La Cruz &#169; 2020 - 2021</a>
           </p>
-          <span>Desarrollador web front-end</span>
+          <span>Desarrollador web frontend</span>
         </div>
       </div>
     </footer>    
