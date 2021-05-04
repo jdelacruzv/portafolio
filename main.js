@@ -56,13 +56,13 @@ close_resume.addEventListener('click', () => {
 });
 
 // ---------------> Botón enviar mensaje --------------->
-form.addEventListener('submit', e => {
-    e.preventDefault();
-    let warnings = '';
-    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
-    paragraph.innerHTML = '';
-    if(username.value === '' || !regexEmail.test(email.value) || subject.value === '') {
-        warnings = `${username.value} los datos están incompletos`
-        paragraph.innerHTML = warnings;
-    }
-});
+// form.addEventListener('submit', e => {
+//     e.preventDefault();
+//     let warnings = '';
+//     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+//     paragraph.innerHTML = '';
+//     if(username.value === '' || !regexEmail.test(email.value) || subject.value === '') {
+//         warnings = `${username.value} los datos están incompletos`
+//         paragraph.innerHTML = warnings;
+//     }
+// });
