@@ -6,11 +6,6 @@ const resume = document.getElementById('resume');
 const window_resume = document.getElementById('window-resume');
 const body = document.querySelector('body');
 const close_resume = document.getElementById('close-resume');
-const username = document.getElementById('name');
-const email = document.getElementById('email');
-const subject = document.getElementById('subject');
-const form = document.getElementById('contact-form');
-const paragraph = document.querySelector('.warnings');
 
 // ---------------> Efecto del header cuando se hace scroll --------------->
 function showScroll() {
@@ -54,15 +49,3 @@ close_resume.addEventListener('click', () => {
     window_resume.classList.remove('show-modal')
     body.style.overflow = 'visible';
 });
-
-// ---------------> Botón enviar mensaje --------------->
-// form.addEventListener('submit', e => {
-//     e.preventDefault();
-//     let warnings = '';
-//     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
-//     paragraph.innerHTML = '';
-//     if(username.value === '' || !regexEmail.test(email.value) || subject.value === '') {
-//         warnings = `${username.value} los datos están incompletos`
-//         paragraph.innerHTML = warnings;
-//     }
-// });
