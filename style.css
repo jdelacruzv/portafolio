@@ -567,6 +567,14 @@ textarea:focus~.bar::before {
     width: 100%;
 }
 
+.warnings {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
 button {
     display: block;
     height: 50px;
@@ -576,7 +584,7 @@ button {
     outline: none;
     border-radius: 5px;
     padding: 0.5rem 2rem;
-    margin: 2rem auto 1.5rem auto;
+    margin: 0 auto 1.5rem auto;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;

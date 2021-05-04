@@ -1,7 +1,18 @@
+const hiden_name = document.querySelector('.hidden-name');
+const btn_menu = document.querySelector('.btn-menu');
+const menu_items = document.querySelector('.menu-items');
+const menu_links = document.querySelectorAll('a.menu-link');
+const resume = document.getElementById('resume');
+const window_resume = document.getElementById('window-resume');
+const body = document.querySelector('body');
+const close_resume = document.getElementById('close-resume');
+const username = document.getElementById('name');
+const email = document.getElementById('email');
+const subject = document.getElementById('subject');
+const form = document.getElementById('contact-form');
+const paragraph = document.querySelector('.warnings');
+
 // ---------------> Efecto del header cuando se hace scroll --------------->
-
-let hiden_name = document.querySelector('.hidden-name');
-
 function showScroll() {
     // Detecta la cantidad de scroll cuando se esta bajando
     let scroll_top = document.documentElement.scrollTop;
@@ -18,13 +29,7 @@ function showScroll() {
 
 window.addEventListener('scroll', showScroll);
 
-
 // ---------------> Efecto menu hamburguesa --------------->
-
-let btn_menu = document.querySelector('.btn-menu');
-let menu_items = document.querySelector('.menu-items');
-let menu_links = document.querySelectorAll('a.menu-link');
-
 btn_menu.addEventListener('click', () => {
     btn_menu.classList.toggle('active');
     menu_items.classList.toggle('show');
@@ -38,14 +43,7 @@ menu_links.forEach(link => {
     });
 });
 
-
 // ---------------> Ventana no modal hoja de vida (resume) --------------->
-
-let resume = document.getElementById('resume');
-let window_resume = document.getElementById('window-resume');
-let body = document.querySelector('body');
-let close_resume = document.getElementById('close-resume');
-
 resume.addEventListener('click', () => {
     window_resume.classList.add('show-modal');
     body.style.overflow = 'hidden';
@@ -55,4 +53,16 @@ resume.addEventListener('click', () => {
 close_resume.addEventListener('click', () => {
     window_resume.classList.remove('show-modal')
     body.style.overflow = 'visible';
+});
+
+// ---------------> Botón enviar mensaje --------------->
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    let warnings = '';
+    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+    paragraph.innerHTML = '';
+    if(username.value === '' || !regexEmail.test(email.value) || subject.value === '') {
+        warnings = `${username.value} los datos están incompletos`
+        paragraph.innerHTML = warnings;
+    }
 });

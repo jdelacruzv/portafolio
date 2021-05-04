@@ -183,27 +183,26 @@
       <div class="wrapper">
         <hr>
         <h2>Contacto</h2>
-        <form name="contact" method="POST" class="contact-form" netlify-honeypot="bot-field" data-netlify="true">
+        <!-- <form name="contact" method="POST" class="contact-form" id="contact-form" netlify-honeypot="bot-field" data-netlify="true"> -->
+        <form class="contact-form" id="contact-form">
           <div class="form-container">
             <!-- Campo honeypot (tarro de miel) para evitar los bots de spam -->
-            <p class="hidden">
+            <!-- <p class="hidden">
               <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-            </p>
-            <!-- <input type="text" name="name" placeholder="Nombre" required/>
-            <input type="email" name="email" placeholder="Correo electrónico" required/>
-            <textarea name="message" placeholder="Mensaje..." required></textarea> -->
+            </p> -->
             <div class="group">
-              <input type="text" name="name" id="name" required><span class="bar"></span>
+              <input type="text" name="name" id="name"><span class="bar"></span>
               <label for="">Nombre</label>
             </div>
             <div class="group">
-                <input type="email" name="email" id="email" required><span class="bar"></span>
+                <input type="email" name="email" id="email"><span class="bar"></span>
                 <label for="">Correo</label>
             </div>
             <div class="group">
-                <textarea name="subject" id="message" rows="3" required></textarea><span class="bar"></span>
+                <textarea name="subject" id="subject" rows="3"></textarea><span class="bar"></span>
                 <label for="">Asunto</label>
             </div>
+            <p class="warnings"></p>
             <button type="submit">Enviar mensaje</button>
           </div>
         </form>
