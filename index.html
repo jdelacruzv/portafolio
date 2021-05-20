@@ -6,26 +6,33 @@
     <meta name="description" content="Desarrollador web frontend" />
     <meta name="autors" content="Jose De La Cruz" />
     <title>José De La Cruz - Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;900&amp;display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="style.css"/>
   </head>
   
-  <body>
-      <section class="main">
-        <div class="main-name">
-          <p>Hola, soy:</p>
-          <h1>José De La Cruz.</h1>
-          <p>Desarrollador web frontend...<span>&#160;</span></p>
-        </div>
-        <div class="main-project">
-          <a href="#proyecto">Ver mis proyectos <span>&#8595;</span></a>
-        </div>
-    </section>
-
+  <body>    
+    <main class="main">
+      <figure class="main-photo">
+        <img class="main-photo__img" src="img/jose.jpg" alt="">
+      </figure>
+      <div class="main-hero">
+        <p class="main-hero__text">Hola, soy:</p>
+        <h1 class="main-hero__name">José De La Cruz.</h1>
+        <p class="main-hero__text">Desarrollador web frontend...
+          <span class="main-hero__machine">&#160;</span>
+        </p>
+      </div>
+      <figure class="main-button">
+        <a class="main-button__project" href="#proyecto">Ver proyectos 
+          <img class="main-button__img"src="img/eye.png" alt="Icono ojo"></a>
+      </figure>     
+    </main>
+    
     <header class="header">
-      <div class="wrapper">      
-        <p class="hidden-name">
-          <a href="">José De La Cruz<span>Developer</span></a>
+      <!-- <div class="wrapper">       -->
+        <p class="hidden-par">
+          <a class="hidden-par__name" href="">José De La Cruz<span class="hidden-par__dev">Developer</span></a>
         </p>
         <nav class="menu">
           <ul class="menu-items">
@@ -40,9 +47,9 @@
           <div class="linea-2"></div>
           <div class="linea-3"></div>
         </div>
-      </div>
+      <!-- </div> -->
     </header>
-    
+
     <section id="proyecto" class="projects">
       <div class="wrapper">
         <h2>Proyectos</h2>
@@ -71,7 +78,7 @@
 
     <section id="habilidades" class="skills">
       <div class="wrapper">
-        <hr>
+        <!-- <hr> -->
         <h2>Habilidades</h2>
         <article class="skill">
           <figure class="skill-container_image">
@@ -95,7 +102,7 @@
 
     <section id="experiencia" class="experiences">
       <div class="wrapper">
-        <hr>
+        <!-- <hr> -->
         <h2>Experiencia</h2>
         <article id="resume" class="experience">
           <figure class="experience-container_image">
@@ -181,7 +188,7 @@
 
     <section id="contacto" class="contact">
       <div class="wrapper">
-        <hr>
+        <!-- <hr> -->
         <h2>Contacto</h2>
         <form name="contact" method="POST" class="contact-form" netlify-honeypot="bot-field" data-netlify="true">
           <div class="form-container">
