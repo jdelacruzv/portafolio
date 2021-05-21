@@ -34,12 +34,20 @@
         <p class="hidden-par">
           <a class="hidden-par__name" href="">José De La Cruz<span class="hidden-par__dev">Developer</span></a>
         </p>
-        <nav class="menu">
-          <ul class="menu-items">
-            <li><a class="menu-link" href="#proyecto">Proyectos</a></li>
-            <li><a class="menu-link" href="#habilidades">Habilidades</a></li>
-            <li><a class="menu-link" href="#experiencia">Experiencia</a></li>
-            <li><a class="menu-link" href="#contacto">Contacto</a></li>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu-items">
+              <a class="menu-link" href="#proyecto">Proyectos</a>
+            </li>
+            <li class="menu-items">
+              <a class="menu-link" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="menu-items">
+              <a class="menu-link" href="#experiencia">Experiencia</a>
+            </li>
+            <li class="menu-items">
+              <a class="menu-link" href="#contacto">Contacto</a>
+            </li>
           </ul>
         </nav>
         <div class="btn-menu">
@@ -52,6 +60,8 @@
 
     <section id="proyecto" class="projects">
       <div class="wrapper">
+        <h2 class="subtitle">PROYECTOS</h2>
+        <hr class="line-ver">
         <article class="project">
           <figure class="project-container">
             <a href="https://jdelacruzv.github.io/quote-garden/" target="_blank" title="Visitar quote garden"><img src="img/quote-garden.png" alt="Quote garden" /></a>
@@ -77,27 +87,26 @@
 
     <section id="habilidades" class="skills">
       <div class="wrapper">
+        <h2 class="subtitle subtitle--light">HABILIDADES</h2>
+        <hr class="line-ver line-ver--light">
         <article class="skill">
           <figure class="skill-container_image">
-            <img class="skill-image" src="img/html.svg" alt="Logo HTML5" title="HTML5">
+            <img class="skill-image" src="img/html.svg" alt="HTML5" title="HTML5">
           </figure>
           <figure class="skill-container_image">
-            <img class="skill-image" src="img/css.svg" alt="Logo CSS3" title="CSS3">
+            <img class="skill-image" src="img/css.svg" alt="CSS3" title="CSS3">
           </figure>
           <figure class="skill-container_image">
-            <img class="skill-image" src="img/js.svg" alt="Logo JavaScript" title="JavaScript">
+            <img class="skill-image" src="img/js.svg" alt="JavaScript" title="JavaScript">
           </figure>
           <figure class="skill-container_image">
-            <img class="skill-image" src="img/git.svg" alt="Logo Git" title="Git">
+            <img class="skill-image" src="img/git.svg" alt="Git" title="Git">
           </figure>
           <figure class="skill-container_image">
-            <img class="skill-image" src="img/github.svg" alt="Logo GitHub" title="GitHub">
+            <img class="skill-image" src="img/github.svg" alt="GitHub" title="GitHub">
           </figure>
           <figure class="skill-container_image">
             <img class="skill-image" src="img/sql.svg" alt="Lenguaje estructurado de consultas" title="SQL">
-          </figure>
-          <figure class="skill-container_image">
-            <img class="skill-image" src="img/terminal.svg" alt="Logo terminal de comandos" title="Terminal de comandos">
           </figure>
         </article>
       </div>
@@ -105,6 +114,8 @@
 
     <section id="experiencia" class="experiences">
       <div class="wrapper">
+        <h2 class="subtitle">EXPERIENCIA</h2>
+        <hr class="line-ver">
         <article id="resume" class="experience">
           <figure class="experience-container_image">
             <img class="experience-image" src="img/freelance.jpg" alt="Logo de freelance" title="Clikc aquí">
@@ -189,6 +200,8 @@
 
     <section id="contacto" class="contact">
       <div class="wrapper">
+        <h2 class="subtitle subtitle--light">CONTACTO</h2>
+        <hr class="line-ver line-ver--light">
         <form name="contact" method="POST" class="contact-form" netlify-honeypot="bot-field" data-netlify="true">
           <div class="form-container">
             <!-- Campo honeypot (tarro de miel) para evitar los bots de spam -->
@@ -222,15 +235,11 @@
     </section>
     
     <footer class="footer">
-      <!-- <div class="wrapper"> -->
+      <div class="wrapper">
         <div class="footer-details">
-          <p>
-            <a href="https://github.com/jdelacruzv" target="_blank">
-              José De La Cruz &#169; 2020 - 2021</a>
-          </p>
-          <span>Desarrollador web frontend</span>
+            <span>Desarrollado por <a class="footer-link"href="https://github.com/jdelacruzv" target="_blank">José De La Cruz</a> &#169;2020-2021</span>
         </div>
-      <!-- </div> -->
+      </div>
     </footer>    
 
     <script src="main.js"></script>

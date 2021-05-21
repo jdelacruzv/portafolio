@@ -6,6 +6,7 @@
     --color-info: #2770F1;
     --color-info-dark: #0356e4; 
     --color-main: #040b14;
+        /* color: #1D2063; */
 }
 
 *,
@@ -25,9 +26,37 @@ body {
     font-family: "Raleway", sans-serif;
     font-size: 16px;
     background-color: var(--color-light);
+    background: linear-gradient(#f5f9fa,#ebf3f5);
 }
 
-/* -------------------- MAIN -------------------- */
+.subtitle {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: center;
+    color: var(--color-black);
+    margin-bottom: 1rem;
+}
+
+.subtitle--light {
+    color: var(--color-light);
+}
+
+.line-ver {
+    border: 0;
+    max-width: 100%;
+    height: 0.1rem;
+    margin-bottom: 3rem;
+    background-image: -o-linear-gradient(left, transparent, var(--color-black), transparent);
+    background-image: linear-gradient(to right, transparent,var(--color-black), transparent);
+}
+
+.line-ver--light {
+    background-image: -o-linear-gradient(left, transparent, var(--color-light), transparent);
+    background-image: linear-gradient(to right, transparent,var(--color-light), transparent);
+}
+
+/* ---------- MAIN ---------- */
 .main {
     height: 100vh;
     display: flex;
@@ -111,7 +140,7 @@ body {
     background-color: var(--color-info-dark);
 }
 
-/* -------------------- HEADER -------------------- */
+/* ---------- HEADER ---------- */
 .header {
     width: 100%;
     display: flex;
@@ -124,6 +153,7 @@ body {
     z-index: 1000;
     background-color: var(--color-black);
     opacity: 0;
+    padding: 0 1rem;
 }
 
 .hidden-par {
@@ -136,7 +166,7 @@ body {
     font-weight: bold;
     letter-spacing: 0.2px;
     margin-left: 0.2rem;
-    color: #ffffff;
+    color: var(--color-light);
 }
 
 .hidden-par__name:hover {
@@ -147,12 +177,39 @@ body {
     font-size: 0.8rem;
     letter-spacing: 1px;
     margin-left: 0.5rem;
-    color: #1D2063;
-    color: #2BCF02;
+    color: var(--color-info-dark);
 }
 
-/* -------------------- BOTON HAMBURGER -------------------- */
+/* ---------- MENU ---------- */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu-items {
+    border-radius: 1rem;
+}
+
+.menu-items:hover,
+.menu-items:active {
+    background-color: var(--color-info-dark);
+    transition: 0.4s;
+}
+
+.menu-link {
+    display: block;
+    text-decoration: none;
+    color: var(--color-light);
+    padding: 0.5rem 0.8rem;
+}
+
+/* ---------- BOTON HAMBURGER ---------- */
 .btn-menu {
     width: 30px;
     margin: 0;
@@ -184,38 +241,9 @@ body {
     position: absolute;
 }
 
-/* -------------------- MENU -------------------- */
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu-items {
-    list-style: none;
-    display: flex;
-}
-
-.menu-items li {
-    border-radius: 1rem;
-}
-
-.menu-items li a {
-    display: block;
-    text-decoration: none;
-    color: var(--color-light);
-    padding: 0.5rem 0.8rem;
-}
-
-.menu-items li:hover,
-li:active {
-    background-color: #10643d;
-    transition: 0.4s;
-}
-
-/* ----------------- SECTION PROJECTS ----------------- */
+/* ---------- PROJECTS ---------- */
 .projects {
-    padding: 6rem 1.5rem 5rem 1.5rem;
+    padding: 5rem 1.5rem 5rem 1.5rem;
 }
 
 .project {
@@ -272,15 +300,11 @@ li:active {
     background-color: #10643d;
 }
 
-/* ----------------- SECTION SKILLS ----------------- */
+/* ---------- SKILLS ---------- */
 
 .skills {
     padding: 5rem 1.5rem 5rem 1.5rem;
     background-color: var(--color-black);
-}
-
-.skills h2 {
-    color: #ebf3f5;
 }
 
 .skill {
@@ -300,10 +324,10 @@ li:active {
     border-radius: 15px;
 }
 
-/* ----------------- SECTION EXPERIENCES ----------------- */
+/* ---------- EXPERIENCES ---------- */
 
 .experiences {
-    padding: 6rem 1.5rem 5rem 1.5rem;
+    padding: 5rem 1.5rem 5rem 1.5rem;
 }
 
 .experience {
@@ -361,7 +385,7 @@ h2 {
 }
 
 
-/* ---------------- SECTION RESUME MODAL ---------------- */
+/* ---------- MODAL ---------- */
 
 .container-modal {
     background-color: rgba(0, 0, 0, 0.3);
@@ -475,16 +499,19 @@ h2 {
     line-height: 1.5rem;
 }
 
-/* ----------------- SECTION CONTACT ----------------- */
+/* ---------- CONTACT ---------- */
 .contact {
-    padding: 6rem 1.5rem 3rem 1.5rem;
+    padding: 5rem 1.5rem 4rem 1.5rem;
     background-color: var(--color-black);
 }
 
 .contact-form {
+    max-width: 768px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin: auto
 }
 
 .hidden {
@@ -574,7 +601,7 @@ button {
     border-radius: 5px;
     padding: 0.5rem 2rem;
     margin: 0 auto 1.5rem auto;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
 }
@@ -584,7 +611,7 @@ button:hover {
 }
 
 .redes {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -592,8 +619,8 @@ button:hover {
 }
 
 .redes-link {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     margin-left: 20px;
     background-color: var(--color-white);
     border-radius: 5px;
@@ -604,7 +631,7 @@ button:hover {
 .redes-link.facebook,
 .redes-link.twitter,
 .redes-link.instagram {
-    background-size: 65px 65px;
+    background-size: 50px 50px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -629,41 +656,35 @@ button:hover {
     background-image: url(../img/rs-instagram.svg);
 }
 
-/* -------------------- FOOTER -------------------- */
+/* ---------- FOOTER ---------- */
 .footer {
     padding: 1rem 0.5rem;
     background-color: var(--color-main);
 }
 
 .footer-details {
+    height: 40px;
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    color: var(--color-white);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    letter-spacing: 0.05rem;
-    text-align: center;
 }
 
-.footer-details p {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.footer-details a {
+.footer-link {
     text-decoration: none;
     color: var(--color-info);
 }
 
-.footer-details span {
-    font-size: 0.7rem;
-    color: var(--color-info-dark);
-    margin-top: 5px;
+.footer-link:hover {
+    text-decoration: underline;
 }
 
-/* ----------------- DIV WRAPPER ----------------- */
+/* ---------- WRAPPER ---------- */
 .wrapper {
-    max-width: 1024px;
+    max-width: 1200px;
     flex: 1;
     height: inherit;
     margin: 0px auto;
@@ -673,7 +694,7 @@ button:hover {
     align-items: inherit;
 }
 
-/* ----------------- MEDIA QUERIES ----------------- */
+/* ---------- MEDIA QUERIES ---------- */
 @media screen and (max-width: 768px) {
     .header {
         padding: 0 1rem;
@@ -692,7 +713,7 @@ button:hover {
         display: block;
     }
 
-    .menu-items {
+    .menu {
         position: absolute;
         z-index: 900;
         top: -200vh;
@@ -707,12 +728,12 @@ button:hover {
         flex-direction: column;
     }
 
-    .menu-items.show {
+    .menu.show {
         display: block;
         top: 50px;
     }
 
-    .menu-items li {
+    .menu-items {
         margin-top: 2rem;
         line-height: 2rem;
         text-transform: uppercase;
@@ -803,10 +824,6 @@ button:hover {
     }
 
     .main-hero__name {
-        font-size: 1.5rem;
-    }
-
-    h2 {
         font-size: 1.5rem;
     }
 
