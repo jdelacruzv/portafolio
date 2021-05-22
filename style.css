@@ -301,16 +301,17 @@ body {
 }
 
 /* ---------- SKILLS ---------- */
-
 .skills {
     padding: 5rem 1.5rem 5rem 1.5rem;
     background-color: var(--color-black);
 }
 
 .skill {
+    max-width: 768px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin: auto;
 }
 
 .skill-container_image {
@@ -325,7 +326,6 @@ body {
 }
 
 /* ---------- EXPERIENCES ---------- */
-
 .experiences {
     padding: 5rem 1.5rem 5rem 1.5rem;
 }
