@@ -17,20 +17,18 @@
     box-sizing: border-box;
 }
 
-/* Suaviza efecto entre el origen/destino, por defecto es auto */
 html {
     scroll-behavior: smooth;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
 }
 
 body {
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
     background-color: var(--color-light);
-    background: linear-gradient(#f5f9fa,#ebf3f5);
 }
 
 .subtitle {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 3px;
     text-align: center;
@@ -63,14 +61,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0 10px;
     background-color: var(--color-main);
 }
 
 .main-photo {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin-bottom: 3rem;
 }
 
@@ -81,19 +77,19 @@ body {
 }
 
 .main-hero {
-    font-size: 1.6rem;
     text-align: center;
     color: var(--color-light);
 }
 
 .main-hero__text {
+    font-size: 1rem;
     letter-spacing: 0.1rem;
     margin: 0;
     position: relative;
 }
 
 .main-hero__name {
-    font-size: 4rem;
+    font-size: 1.8rem;
     margin: 0.8rem 0;
     color: var(--color-white);
 }
@@ -122,6 +118,7 @@ body {
 
 .main-button__project {
     text-decoration: none;
+    font-size: 1rem;
     font-weight: bold;
     padding: 0.8rem 1.5rem;
     cursor: pointer;
@@ -147,11 +144,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 50px;
     position: sticky;
     top: 0;
     z-index: 1000;
     background-color: var(--color-black);
+    box-shadow: 0 0 10px var(--color-black);
     opacity: 0;
     padding: 0 1rem;
 }
@@ -162,7 +160,7 @@ body {
 
 .hidden-par__name {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     letter-spacing: 0.2px;
     margin-left: 0.2rem;
@@ -170,7 +168,7 @@ body {
 }
 
 .hidden-par__name:hover {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 .hidden-par__dev {
@@ -178,6 +176,7 @@ body {
     letter-spacing: 1px;
     margin-left: 0.5rem;
     color: var(--color-info-dark);
+    display: none;
 }
 
 /* ---------- MENU ---------- */
@@ -213,7 +212,6 @@ body {
 .btn-menu {
     width: 30px;
     margin: 0;
-    display: none;
     cursor: pointer;
 }
 
@@ -243,111 +241,144 @@ body {
 
 /* ---------- PROJECTS ---------- */
 .projects {
-    padding: 5rem 1.5rem 5rem 1.5rem;
+    padding: 5rem 1rem 5rem 1rem;
 }
 
 .project {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.project-container {
-    width: 30%;
-    margin: 0 1rem;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.project-container img {
-    width: 100%;
+.project-container {
+    width: 400px;
     height: auto;
+    margin-bottom: 1rem;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin-bottom: 2rem;
     transition: 0.2s;
 }
 
-.project-container img:hover {
+.project-img:hover {
     opacity: 0.8;
     cursor: zoom-in;
     transform: scale(1.1);
 }
 
-.project-btn_github {
+.project-btn {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.project-btn_github a {
+.btn-github {
     text-decoration: none;
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 1rem;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
-    border: 1px solid #198754;
-    background-color: #198754;
+    border: 0;
+    background-color: var(--color-info);
     border-radius: 5px;
-    color: #fafafa;
-    margin: 2rem 0 1rem 0;
+    color: var(--color-light);
+    margin: 1rem 0;
     text-align: center;
 }
 
-.project-btn_github a:hover {
-    border: 1px solid #10643d;
-    background-color: #10643d;
+.btn-github:hover {
+    background-color: var(--color-info-dark);
 }
 
 /* ---------- SKILLS ---------- */
 .skills {
-    padding: 5rem 1.5rem 5rem 1.5rem;
+    padding: 5rem 1rem 5rem 1rem;
     background-color: var(--color-black);
 }
 
 .skill {
-    max-width: 768px;
+    max-width: 900px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     margin: auto;
 }
 
 .skill-container_image {
-    width: 10rem;
-    margin: 1rem 2rem;
+    width: 80px;
+    margin: 1rem;
     cursor: pointer;
 }
 
 .skill-image {
     width: 100%;
+    height: 100%;
     border-radius: 15px;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip:hover .tooltiptext {
+    display: inline-block;
+}
+
+.tooltiptext {
+    display: none;
+    background-color: var(--color-light);
+    color: var(--color-black);
+    line-height: 20px;
+    z-index: 600;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px 0;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -38px;
+}
+
+.tooltiptext::after {
+    content: "";
+    display: block;
+    border-top: 7px solid var(--color-light);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    bottom: -7px;
+    left: calc(50% - 7px);
 }
 
 /* ---------- EXPERIENCES ---------- */
 .experiences {
-    padding: 5rem 1.5rem 5rem 1.5rem;
+    padding: 5rem 1rem 5rem 1rem;
 }
 
 .experience {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-h2 {
-    color: #ebf3f5;
+    align-items: center;
 }
 
 .experience-container_image {
-    width: 25%;
-    margin: 0;
+    width: 300px;
+    margin-bottom: 1rem;
 }
 
 .experience-image {
     width: 100%;
-    box-shadow: 0px 0px 8px #ebf3f5;
+    height: 100%;
+    box-shadow: 0 0 8px var(--color-dark);
     border-radius: 5px;
     transition: 0.3s;
 }
@@ -359,34 +390,30 @@ h2 {
 }
 
 .download-resume {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    text-align: center;
 }
 
-.download-resume a {
+.btn_resume {
     text-decoration: none;
     padding: 0.8rem 1.5rem;
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
-    border: 1px solid #198754;
-    background-color: #198754;
+    border: 0;
+    background-color: var(--color-info);
     border-radius: 5px;
     color: #ffffff;
-    margin: 1rem 0;
+    margin: 1rem auto;
     text-align: center;
 }
 
-.download-resume a:hover {
-    border: 1px solid #10643d;
-    background-color: #10643d;
+.btn_resume:hover {
+    background-color: var(--color-info-dark);
 }
 
 
 /* ---------- MODAL ---------- */
-
 .container-modal {
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
@@ -501,7 +528,8 @@ h2 {
 
 /* ---------- CONTACT ---------- */
 .contact {
-    padding: 5rem 1.5rem 4rem 1.5rem;
+    /* padding: 5rem 1.5rem 4rem 1.5rem; */
+    padding: 5rem 0.5rem 1rem 0.5rem;
     background-color: var(--color-black);
 }
 
@@ -526,7 +554,8 @@ h2 {
 
 .group {
     position: relative;
-    margin: 0 45px 45px 45px;
+    /* margin: 0 45px 45px 45px; */
+    margin: 0 20px 45px 20px;
 }
 
 input,
@@ -611,7 +640,7 @@ button:hover {
 }
 
 .redes {
-    margin-top: 1.5rem;
+    margin: 1.5rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -622,6 +651,7 @@ button:hover {
     width: 35px;
     height: 35px;
     margin-left: 20px;
+    margin-left: 10px;
     background-color: var(--color-white);
     border-radius: 5px;
 }
@@ -667,6 +697,7 @@ button:hover {
     text-align: center;
     font-size: 0.8rem;
     letter-spacing: 0.05rem;
+    line-height: 1.2rem;
     color: var(--color-white);
     display: flex;
     justify-content: center;
@@ -695,24 +726,28 @@ button:hover {
 }
 
 /* ---------- MEDIA QUERIES ---------- */
-@media screen and (max-width: 768px) {
+@media screen and (min-height: 425px) {
+
+}
+
+@media screen and (min-width: 767px) {
     .header {
         padding: 0 1rem;
-        height: 50px;
-    }
-
-    .hidden-par__name {
-        font-size: 1.2rem;
-    }
-
-    .hidden-par__name:hover {
-        font-size: 1.3rem;
+        height: 60px;
     }
 
     .btn-menu {
-        display: block;
+        display: none;
     }
 
+    .project-container {
+        width: 250px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
     .menu {
         position: absolute;
         z-index: 900;
@@ -742,25 +777,6 @@ button:hover {
         border-radius: 0;
     }
 
-    .project-container {
-        width: 60%;
-        margin-bottom: 2rem;
-    }
-
-    .skill-container_image {
-        width: 20%;
-        margin: 1.8rem;
-    }
-
-    .experience {
-        display: block;
-    }
-
-    .experience-container_image {
-        width: 35%;
-        margin: 0px auto 3rem auto;
-    }
-
     .window-modal {
         margin-top: auto;
         margin-left: 5vw;
@@ -775,59 +791,5 @@ button:hover {
     .window-header {
         width: auto;
         height: auto;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .main-photo {
-        width: 150px;
-        height: 150px;
-    }
-    
-    .main-hero__text {
-        font-size: 1.2rem;
-    }
-
-    .main-hero__name {
-        font-size: 3rem;
-    }
-}
-
-@media screen and (max-width: 460px) {
-    .hidden-par__dev {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .main-hero__text {
-        font-size: 1rem;
-    }
-
-    .main-hero__name {
-        font-size: 2rem;
-    }
-
-    .group {
-        margin: 0 20px 45px 20px;
-    }
-
-    .redes-link {
-        margin-left: 10px;
-
-    }
-}
-
-@media screen and (max-width: 300px) {
-    .main-hero__text {
-        font-size: 0.8rem;
-    }
-
-    .main-hero__name {
-        font-size: 1.5rem;
-    }
-
-    .contact {
-        padding: 5rem 0.5rem 1rem 0.5rem;
     }
 }
