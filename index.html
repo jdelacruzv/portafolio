@@ -6,246 +6,211 @@
     <meta name="description" content="Desarrollador web frontend" />
     <meta name="autors" content="Jose De La Cruz" />
     <title>José De La Cruz - Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;900&amp;display=swap" rel="stylesheet">
+    
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"> -->
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="style.css"/>
   </head>
   
   <body>    
-    <main class="main">
-      <figure class="main-photo">
-        <img class="main-photo__img" src="img/jose.jpg" alt="">
-      </figure>
-      <div class="main-hero">
-        <p class="main-hero__text">Hola, soy:</p>
-        <h1 class="main-hero__name">José De La Cruz.</h1>
-        <p class="main-hero__text">Desarrollador web frontend.
-          <span class="main-hero__machine">&#160;</span>
-        </p>
-      </div>
-      <figure class="main-button">
-        <a class="main-button__project" href="#proyecto">Ver proyectos 
-          <img class="main-button__img"src="img/eye.png" alt="Icono ojo"></a>
-      </figure>     
-    </main>
-    
-    <header class="header">
-      <!-- <div class="wrapper"> -->
-        <p class="hidden-par">
-          <a class="hidden-par__name" href="">José De La Cruz<span class="hidden-par__dev">Developer</span></a>
-        </p>
-        <nav class="nav">
-          <ul class="menu">
-            <li class="menu-items">
-              <a class="menu-link" href="#proyecto">Proyectos</a>
+    <!--===== HEADER =====-->   
+    <header class="header">  
+      <div class="wrapper">
+        <a class="header__link" href="#">Jose <span class="header__lastname"> De La Cruz</span>
+        </a>
+        <i class="fas fa-bars menu-toggle" id="menu-toggle""></i>      
+        <nav class="navbar" id="navbar">
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Home</a>
             </li>
-            <li class="menu-items">
-              <a class="menu-link" href="#habilidades">Habilidades</a>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#proyecto">About</a>
             </li>
-            <li class="menu-items">
-              <a class="menu-link" href="#experiencia">Experiencia</a>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#projects">Projects</a>
             </li>
-            <li class="menu-items">
-              <a class="menu-link" href="#contacto">Contacto</a>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#skills">Skills</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#works">Works</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
-        <div class="btn-menu">
-          <div class="linea-1"></div>
-          <div class="linea-2"></div>
-          <div class="linea-3"></div>
-        </div>
-      <!-- </div> -->
+      </div>
     </header>
 
-    <section id="proyecto" class="projects">
-      <!-- <div class="wrapper"> -->
-        <h2 class="subtitle">PROYECTOS</h2>
-        <hr class="line-ver">
-        <article class="project">
-          <figure class="project-container">
-            <a href="https://jdelacruzv.github.io/quote-garden/" target="_blank" title="Visitar quote garden"><img class="project-img" src="img/quote-garden.png" alt="Quote garden" /></a>
-          </figure>
-          <figure class="project-container">
-            <a href="https://jdelacruzv.github.io/simon-says/" target="_blank" title="Visitar juego simon says"><img class="project-img" src="img/simon-says.jpg" alt="Juego simon dice" /></a>
-          </figure>
-          <figure class="project-container">
-            <a href="https://jdelacruzv.github.io/memoria/" target="_blank" title="Visitar juego memoria"><img class="project-img" src="img/memoria.jpg" alt="Juego de memoria" /></a>
-          </figure>
-          <figure class="project-container">
-            <a href="https://jdelacruzv.github.io/analog-clock/" target="_blank" title="Visitar relog analógico"><img class="project-img" src="img/analog-clock.jpg" alt="Reloj analógico" /></a>
-          </figure>
-          <figure class="project-container">
-            <a href="https://jdelacruzv.github.io/the-best-fruit/" target="_blank" title="Visitar the best fruit"><img class="project-img" src="img/the-best-fruit.jpg" alt="Page The Best Fruit" /></a>
-          </figure>
-        </article>
-        <div class="project-btn">
-          <a class="btn-github" href="https://github.com/jdelacruzv" target="_blank" download>Mas proyectos en GitHub</a>        
-        </div>
-      <!-- </div> -->
-    </section> 
-
-    <section id="habilidades" class="skills">
-      <!-- <div class="wrapper"> -->
-        <h2 class="subtitle subtitle--light">HABILIDADES</h2>
-        <hr class="line-ver line-ver--light">
-        <article class="skill">
-          <figure class="skill-container_image tooltip">
-            <img class="skill-image" src="img/html.svg" alt="HTML5">
-            <span class="tooltiptext">HTML5</span>
-          </figure>
-          <figure class="skill-container_image tooltip">
-            <img class="skill-image" src="img/css.svg" alt="CSS3"">
-            <span class="tooltiptext">CSS3</span>
-          </figure>
-          <figure class="skill-container_image tooltip">
-            <img class="skill-image" src="img/js.svg" alt="JavaScript">
-            <span class="tooltiptext">JavaScript</span>
-          </figure>
-          <figure class="skill-container_image tooltip">
-            <img class="skill-image" src="img/git.svg" alt="Git">
-            <span class="tooltiptext">Git</span>
-          </figure>
-          <figure class="skill-container_image tooltip">
-            <img class="skill-image" src="img/github.svg" alt="GitHub">
-            <span class="tooltiptext">GitHub</span>
-          </figure>
-          <figure class="skill-container_image tooltip">
-            <img class="skill-image" src="img/terminal.svg" alt="Linea de comandos">
-            <span class="tooltiptext">Terminal</span>
-          </figure>
-        </article>
-      <!-- </div> -->
-    </section>
-
-    <section id="experiencia" class="experiences">
-      <!-- <div class="wrapper"> -->
-        <h2 class="subtitle">EXPERIENCIA</h2>
-        <hr class="line-ver">
-        <article id="resume" class="experience">
-          <figure class="experience-container_image">
-            <img class="experience-image" src="img/freelance.jpg" alt="Logo de freelance" title="Clikc aquí">
-          </figure>
-          <figure class="experience-container_image">
-            <img class="experience-image" src="img/multitop.jpg" alt="Logo empresa Multitop" title="Clikc aquí">
-          </figure>
-          <figure class="experience-container_image">
-            <img class="experience-image" src="img/maestro.jpg" alt="Logo empresa Maestro Perú" title="Clikc aquí">
-          </figure>
-        </article>
-        <div class="download-resume">
-          <a class="btn_resume" href="img/jose_delacruz.pdf" download>Descargar Curriculum</a>        
-        </div>
-      <!-- </div> -->
-    </section>    
-
-    <section id="window-resume" class="container-modal">
-      <article class="window-modal">
-        <div class="window-header">          
-          <figure class="window-header_close">
-            <img id="close-resume" src="img/close.png" alt="">
-          </figure>
-          <div class="window-header_main">
-            <p class="window-header_main_title">José Luis De La Cruz Vela</p>
-            <p class="window-header_main_address">jldlcv@gmail.com | Rionegro - Colombia</p>
-            <p class="window-header_main_description">Profesional en Ciencias de la Aministración y Desarrollador Web Front-end</p>
-          </div>
-        </div>
-        <div class="window-body">          
-          <div class="window-body_title">
-            <h4>Experiencia Laboral</h4>
-          </div>
-          <div class="window-body_description">
-            <h5>Ene 2019 - A hoy | Independiente | Técnico en Soporte TI | Rionegro - Colombia</h5>
-            <p>•	Soporte remoto y asistencial al usuario (cliente) mediante el programa TeamViewer.</p>
-            <p>•	Diagnóstico y solución a los problemas de software y hardware del cliente.</p>
-            <p>•	Instalar y configurar sistemas operativos como MS Windows y Linux (Ubuntu/Debian).</p>
-            <p>•	Mantenimiento preventivo y correctivo a los computadores de mesa y portátiles.</p>
-            
-            <h5>Abr 2016 - Dic 2018 | Multitop S.A.C. | Supervisor de Inventarios | Lima - Perú</h5>
-            <p>•	Planificar y supervisar los inventarios generales y cíclicos de 03 bodegas y 01 almacén.</p>
-            <p>•	Auditar procesos logísticos: picking, packing, movimientos internos y logística inversa.</p>
-            <p>•	Análisis de diferencias existentes entre la mercadería física y lo registrado en el sistema.</p>
-            <p>•	Clasificar productos descontinuados y en mal estado para su baja en el sistema.</p>
-            <p>•	Validar la operación de los cruces de artículos en base al costo promedio.</p>
-
-            <h5>Oct 2010 - Ene 2014 | Maestro Perú S.A. | Coordinador de Inventarios | Lima - Perú</h5>
-            <p>•	Planificar y coordinar los inventarios generales, cíclicos y ABC de 10 bodegas y 01 CD.</p>
-            <p>•	Elaborar y supervisar los inventarios cíclicos programados según cronograma.</p>
-            <p>•	Realizar informes del indicador logístico ERI (Exactitud de Registro de Inventarios).</p>
-            <p>•	Soporte del sistema SAP R/3 MM a los almacenes retail y al centro de distribución.</p>
-            <p>•	Capacitar y certificar a los analistas de inventarios para ser monitores.</p>
-            
-            <h5>Dic 2005 - Set 2010 | Maestro Perú S.A. | Analista de Inventarios | Lima - Perú</h5>
-            <p>•	Análisis y depuración de diferencias ocasionadas en las operaciones del almacén.</p>
-            <p>•	Auditar procesos logísticos: picking, packing, movimientos internos y logística inversa.</p>
-            <p>•	Control y seguimiento de la merma operativa (artículos no aptos para la venta).</p>
-            <p>•	Realización de los cruces de artículos en base al costo promedio.</p>
-            <p>•	Supervisar el cumplimiento del rotulado de la mercadería (Bind Card).</p> 
-          </div>
-          <div class="window-body_title">
-            <h4>Información Académica</h4>
-          </div>
-          <div class="window-body_description">
-            <h5>Profesional Universitario en Ciencias de la Administración (Administrador de Empresas)</h5>
-            <p>
-              •	Universidad Nacional de Educación Enrique Guzmán y Valle (2017 - Lima - Perú)
-            </p>
-            <h5>Diplomado Especializado en Logística y Operaciones (260 Horas)</h5>
-            <p>
-              •	Cámara Nacional de Comercio del Perú (2017 - Lima - Perú)
-            </p>
-            <h5>Profesional Técnico en Computación e Informática (Tecnólogo)</h5>
-            <p>
-              •	Instituto de Educación Superior Tecnológico María Araoz Pinto (2011 - Lima - Perú)
-            </p>            
-          </div>
-        </div>          
-      </article>
-    </section>
-
-    <section id="contacto" class="contact">
+    <!--===== MAIN =====-->   
+    <main class="main">
       <div class="wrapper">
-        <h2 class="subtitle subtitle--light">CONTACTO</h2>
-        <hr class="line-ver line-ver--light">
-        <form name="contact" method="POST" class="contact-form" netlify-honeypot="bot-field" data-netlify="true">
-          <div class="form-container">
-            <!-- Campo honeypot (tarro de miel) para evitar los bots de spam -->
-            <p class="hidden">
-              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-            </p>
-            <div class="group">
-              <input type="text" name="name" id="name" required><span class="bar"></span>
-              <label for="">Nombre</label>
+        <!--===== HOME =====-->   
+        <!-- <section id="home" class="home">
+          <figure class="home__figure">
+            <img class="home__img" src="img/jose.jpg" alt="Foto Jose">
+          </figure>      
+          <div class="home__data">
+            <h1 class="home__title">Hi, I'am<br>
+              <span class="home__title-color">Jose De La Cruz</span><br>
+              Frontend Developer<span class="home__machine">&#160;</span>
+            </h1>                 
+            <div class="btn">
+              <a class="btn__link" href="#proyecto">View projects<i class="fas fa-eye btn__icon"></i>
+              </a>
             </div>
-            <div class="group">
-                <input type="email" name="email" id="email" required><span class="bar"></span>
-                <label for="">Correo</label>
-            </div>
-            <div class="group">
-                <textarea name="subject" id="subject" rows="3" required></textarea><span class="bar"></span>
-                <label for="">Asunto</label>
-            </div>
-            <p class="warnings"></p>
-            <button type="submit">Enviar mensaje</button>
           </div>
-        </form>
-        <div class="redes">
-          <a href="https://github.com/jdelacruzv" target="_blank" class="redes-link github"></a>
-          <a href="https://www.linkedin.com/in/jose-luis-de-la-cruz-626bb3149/"  target="_blank"  class="redes-link linkedin"></a>
-          <a href="https://www.facebook.com/joseluis.delacruz.vela/"  target="_blank"  class="redes-link facebook"></a>
-          <a href="https://twitter.com/jose_delacruz_v" target="_blank" class="redes-link twitter"></a>
-          <a href="https://www.instagram.com/jdelacruzv/" target="_blank" class="redes-link instagram"></a>
-        </div>
+        </section> -->
+
+        <!--===== PROJECTS =====-->   
+        <!-- <section id="projects" class="projects">
+          <h2 class="subtitle">Projects</h2>
+          <hr class="line-ver">
+          <article class="project">
+            <figure class="project__link">
+              <a href="https://jdelacruzv.github.io/quote-garden/" target="_blank" title="Visitar quote garden"><img class="project__img" src="img/quote-garden.png" alt="Quote garden" /></a>
+            </figure>
+            <figure class="project__link">
+              <a href="https://jdelacruzv.github.io/simon-says/" target="_blank" title="Visitar juego simon says"><img class="project__img" src="img/simon-says.jpg" alt="Juego simon dice" /></a>
+            </figure>
+            <figure class="project__link">
+              <a href="https://jdelacruzv.github.io/memoria/" target="_blank" title="Visitar juego memoria"><img class="project__img" src="img/memoria.jpg" alt="Juego de memoria" /></a>
+            </figure>
+            <figure class="project__link">
+              <a href="https://jdelacruzv.github.io/analog-clock/" target="_blank" title="Visitar relog analógico"><img class="project__img" src="img/analog-clock.jpg" alt="Reloj analógico" /></a>
+            </figure>
+            <figure class="project__link">
+              <a href="https://jdelacruzv.github.io/the-best-fruit/" target="_blank" title="Visitar the best fruit"><img class="project__img" src="img/the-best-fruit.jpg" alt="Page The Best Fruit" /></a>
+            </figure>
+          </article>  
+          <div class="btn">
+            <a class="btn__link" href="https://github.com/jdelacruzv" target="_blank" download>View more<i class="fab fa-github btn__icon"></i></a>        
+          </div>
+        </section>  -->
+
+        <!--===== SKILLS =====-->   
+        <!-- <section id="skills" class="skills">
+          <h2 class="subtitle">Skills</h2>
+          <hr class="line-ver">
+          <article class="skill">
+            <figure class="skill-container_image tooltip">
+              <img class="skill-image" src="img/html.svg" alt="HTML5">
+              <span class="tooltiptext">HTML5</span>
+            </figure>
+            <figure class="skill-container_image tooltip">
+              <img class="skill-image" src="img/css.svg" alt="CSS3"">
+              <span class="tooltiptext">CSS3</span>
+            </figure>
+            <figure class="skill-container_image tooltip">
+              <img class="skill-image" src="img/js.svg" alt="JavaScript">
+              <span class="tooltiptext">JavaScript</span>
+            </figure>
+            <figure class="skill-container_image tooltip">
+              <img class="skill-image" src="img/git.svg" alt="Git">
+              <span class="tooltiptext">Git</span>
+            </figure>
+            <figure class="skill-container_image tooltip">
+              <img class="skill-image" src="img/github.svg" alt="GitHub">
+              <span class="tooltiptext">GitHub</span>
+            </figure>
+            <figure class="skill-container_image tooltip">
+              <img class="skill-image" src="img/terminal.svg" alt="Linea de comandos">
+              <span class="tooltiptext">Terminal</span>
+            </figure>
+          </article>
+        </section> -->
+
+        <!--===== WORKS =====-->   
+        <section id="works" class="works">
+          <h2 class="subtitle">Works</h2>
+          <hr class="line-ver">
+          <article class="work">
+            <div class="work__big">
+              <div class="work__small">
+                <p><i class="fas fa-laptop fa-2x work__icon"></i><br>
+                  <span class="work__position">IT Support Technician</span><br>
+                  Freelance<br>
+                  <span class="work__view">View more <i class="fas fa-arrow-right"></i></span>
+                </p>
+              </div>
+            </div>
+            <div class="work__big">
+              <div class="work__small">
+                <p><i class="fas fa-tasks fa-2x work__icon"></i><br>
+                  <span class="work__position">Inventory Supervisor</span><br>
+                  Multitop<br>
+                  <span class="work__view">View more <i class="fas fa-arrow-right"></i></span>
+                </p>
+              </div>
+            </div>
+            <div class="work__big">
+              <div class="work__small">
+                <p><i class="fas fa-cogs fa-2x work__icon"></i><br>
+                  <span class="work__position">Inventory Coordinator</span><br>
+                  Maestro Perú<br>
+                  <span class="work__view">View more <i class="fas fa-arrow-right"></i></span>  
+                </p>
+              </div>
+            </div>    
+          </article> 
+          <div class="btn">
+            <a class="btn__link" href="img/jose_delacruz.pdf" download>Download CV<i class="fas fa-file-download btn__icon"></i></a>        
+          </div>
+          <aricle class="modal"></aricle>
+        </section>    
+
+        <!--===== CONTACT =====-->   
+        <section id="contact" class="contact">
+          <h2 class="subtitle">Contact</h2>
+          <hr class="line-ver">
+          <form name="contact" method="POST" class="contact-form" netlify-honeypot="bot-field" data-netlify="true">
+            <div class="form-container">
+              <!-- Campo honeypot (tarro de miel) para evitar los bots de spam -->
+              <p class="hidden">
+                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+              </p>
+              <div class="group">
+                <input type="text" name="name" id="name" required><span class="bar"></span>
+                <label for="">Nombre</label>
+              </div>
+              <div class="group">
+                  <input type="email" name="email" id="email" required><span class="bar"></span>
+                  <label for="">Correo</label>
+              </div>
+              <div class="group">
+                  <textarea name="subject" id="subject" rows="3" required></textarea><span class="bar"></span>
+                  <label for="">Asunto</label>
+              </div>
+              <p class="warnings"></p>
+              <button type="submit">Enviar<i class="fas fa-envelope btn__icon"></i></button>
+            </div>
+          </form>
+          <div class="redes">
+            <a href="https://github.com/jdelacruzv" target="_blank" class="redes-link github"></a>
+            <a href="https://www.linkedin.com/in/jose-luis-de-la-cruz-626bb3149/"  target="_blank"  class="redes-link linkedin"></a>
+            <a href="https://www.facebook.com/joseluis.delacruz.vela/"  target="_blank"  class="redes-link facebook"></a>
+            <a href="https://twitter.com/jose_delacruz_v" target="_blank" class="redes-link twitter"></a>
+            <a href="https://www.instagram.com/jdelacruzv/" target="_blank" class="redes-link instagram"></a>
+          </div>
+        </section>
       </div>
-    </section>
+    </main> 
     
+    <!--===== FOOTER =====-->   
     <footer class="footer">
-      <!-- <div class="wrapper"> -->
+      <div class="wrapper">
         <div class="footer-details">
             <span>Desarrollado por &#169;<a class="footer-link"href="https://github.com/jdelacruzv" target="_blank">José De La Cruz.</a> 2020-2021</span>
         </div>
-      <!-- </div> -->
+      </div>
     </footer>    
 
     <script src="main.js"></script>
