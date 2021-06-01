@@ -1,218 +1,274 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Desarrollador web frontend" />
     <meta name="autors" content="Jose De La Cruz" />
     <title>José De La Cruz - Developer</title>
-    
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"> -->
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!--===== HEADER =====-->
+    <header class="header">
+        <div class="wrapper">
+        <nav class="navbar">
+            <a class="navbar__name" href="#">Jose<span class="navbar__lastname">De La Cruz</span></a>
 
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="style.css"/>
-  </head>
-  
-  <body>    
-    <!--===== HEADER =====-->   
-    <header class="header">  
-      <div class="wrapper">
-        <a class="header__link" href="#">Jose <span class="header__lastname"> De La Cruz</span>
-        </a>
-        <i class="fas fa-bars menu-toggle" id="menu-toggle""></i>      
-        <nav class="navbar" id="navbar">
-          <ul class="navbar__menu">
-            <li class="navbar__item">
-              <a class="navbar__link" href="#">Home</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#proyecto">About</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#projects">Projects</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#skills">Skills</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#works">Works</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#contact">Contact</a>
-            </li>
-          </ul>
+            <figure class="navbar__menu">
+                <img class="navbar__toggle" id="navbar__toggle" src="img/menu-2.png" alt="Menú toggle" />
+            </figure>
+
+            <ul class="navbar__list" id="navbar__list">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#about">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#projects">Projects</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#skills">Skills</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#jobs">Jobs</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </nav>
-      </div>
+        </div>
     </header>
 
-    <!--===== MAIN =====-->   
+    <!--===== MAIN =====-->
     <main class="main">
-      <div class="wrapper">
-        <!--===== HOME =====-->   
-        <!-- <section id="home" class="home">
-          <figure class="home__figure">
-            <img class="home__img" src="img/jose.jpg" alt="Foto Jose">
-          </figure>      
-          <div class="home__data">
-            <h1 class="home__title">Hi, I'am<br>
-              <span class="home__title-color">Jose De La Cruz</span><br>
-              Frontend Developer<span class="home__machine">&#160;</span>
-            </h1>                 
-            <div class="btn">
-              <a class="btn__link" href="#proyecto">View projects<i class="fas fa-eye btn__icon"></i>
-              </a>
-            </div>
-          </div>
-        </section> -->
+        <div class="wrapper">
+        <!--===== HOME =====-->
+        <section id="home" class="home">
+            <figure class="home__photo">
+                <img class="home__img" src="img/jose.jpg" alt="Foto Jose" />
+            </figure>
 
-        <!--===== PROJECTS =====-->   
-        <!-- <section id="projects" class="projects">
-          <h2 class="subtitle">Projects</h2>
-          <hr class="line-ver">
-          <article class="project">
-            <figure class="project__link">
-              <a href="https://jdelacruzv.github.io/quote-garden/" target="_blank" title="Visitar quote garden"><img class="project__img" src="img/quote-garden.png" alt="Quote garden" /></a>
-            </figure>
-            <figure class="project__link">
-              <a href="https://jdelacruzv.github.io/simon-says/" target="_blank" title="Visitar juego simon says"><img class="project__img" src="img/simon-says.jpg" alt="Juego simon dice" /></a>
-            </figure>
-            <figure class="project__link">
-              <a href="https://jdelacruzv.github.io/memoria/" target="_blank" title="Visitar juego memoria"><img class="project__img" src="img/memoria.jpg" alt="Juego de memoria" /></a>
-            </figure>
-            <figure class="project__link">
-              <a href="https://jdelacruzv.github.io/analog-clock/" target="_blank" title="Visitar relog analógico"><img class="project__img" src="img/analog-clock.jpg" alt="Reloj analógico" /></a>
-            </figure>
-            <figure class="project__link">
-              <a href="https://jdelacruzv.github.io/the-best-fruit/" target="_blank" title="Visitar the best fruit"><img class="project__img" src="img/the-best-fruit.jpg" alt="Page The Best Fruit" /></a>
-            </figure>
-          </article>  
-          <div class="btn">
-            <a class="btn__link" href="https://github.com/jdelacruzv" target="_blank" download>View more<i class="fab fa-github btn__icon"></i></a>        
-          </div>
-        </section>  -->
+            <div class="home__data">
+                <h1 class="home__title">Hi, I'am<br />
+                    <span class="home__title-color">Jose De La Cruz</span><br />
+                    Frontend Developer.<span class="home__machine">&#160;</span>
+                </h1>
 
-        <!--===== SKILLS =====-->   
-        <!-- <section id="skills" class="skills">
-          <h2 class="subtitle">Skills</h2>
-          <hr class="line-ver">
-          <article class="skill">
-            <figure class="skill-container_image tooltip">
-              <img class="skill-image" src="img/html.svg" alt="HTML5">
-              <span class="tooltiptext">HTML5</span>
-            </figure>
-            <figure class="skill-container_image tooltip">
-              <img class="skill-image" src="img/css.svg" alt="CSS3"">
-              <span class="tooltiptext">CSS3</span>
-            </figure>
-            <figure class="skill-container_image tooltip">
-              <img class="skill-image" src="img/js.svg" alt="JavaScript">
-              <span class="tooltiptext">JavaScript</span>
-            </figure>
-            <figure class="skill-container_image tooltip">
-              <img class="skill-image" src="img/git.svg" alt="Git">
-              <span class="tooltiptext">Git</span>
-            </figure>
-            <figure class="skill-container_image tooltip">
-              <img class="skill-image" src="img/github.svg" alt="GitHub">
-              <span class="tooltiptext">GitHub</span>
-            </figure>
-            <figure class="skill-container_image tooltip">
-              <img class="skill-image" src="img/terminal.svg" alt="Linea de comandos">
-              <span class="tooltiptext">Terminal</span>
-            </figure>
-          </article>
-        </section> -->
+                <div class="btn">
+                    <a class="btn__link" href="#projects">View projects<i class="fas fa-eye btn__icon"></i></a>
+                </div>
+            </div>
+        </section>
 
-        <!--===== WORKS =====-->   
-        <section id="works" class="works">
-          <h2 class="subtitle">Works</h2>
-          <hr class="line-ver">
-          <article class="work">
-            <div class="work__big">
-              <div class="work__small">
-                <p><i class="fas fa-laptop fa-2x work__icon"></i><br>
-                  <span class="work__position">IT Support Technician</span><br>
-                  Freelance<br>
-                  <span class="work__view">View more <i class="fas fa-arrow-right"></i></span>
-                </p>
-              </div>
+        <!--===== ABOUT =====-->
+        <section id="about" class="about">
+            <h2 class="subtitle">About me</h2>
+            <hr class="line-ver" />
+
+            <article class="aboutme">
+                <figure class="aboutme__photo">
+                    <img class="aboutme__img" src="/img/family.png" alt="Photo family" />
+                </figure>       
+                <p class="aboutme__text">
+                    I am a professional in business administration and a computer and informatics technician with extensive experience in the logistics area. I was born in Peru and I currently reside in Colombia.<br><br>
+                    I consider myself self-taught and passionate about technology; In mid-2020 and in the midst of the crisis due to the pandemic, I decided to learn everything related to web development.<br><br>
+                    I like spending a lot of time sharing with my family, watching action movies, science fiction, and documentaries; from time to time I really enjoy cooking 😉.<br><br>
+                </p>            
+            </article>
+            <div class="social">
+                <a class="social__link" href="https://www.facebook.com/joseluis.delacruz.vela/" target="_blank">
+                    <img class="social__img" src="/img/facebook-2.svg" alt="Logo facebook">
+                </a>
+                <a class="social__link" href="https://twitter.com/jose_delacruz_v/" target="_blank">
+                    <img class="social__img" src="/img/twitter-2.svg" alt="Logo twitter">
+                </a>
+                <a class="social__link" href="https://www.instagram.com/jdelacruzv/" target="_blank">
+                    <img class="social__img" src="/img/instagram-2.svg" alt="Logo instagram">
+                </a>
             </div>
-            <div class="work__big">
-              <div class="work__small">
-                <p><i class="fas fa-tasks fa-2x work__icon"></i><br>
-                  <span class="work__position">Inventory Supervisor</span><br>
-                  Multitop<br>
-                  <span class="work__view">View more <i class="fas fa-arrow-right"></i></span>
-                </p>
-              </div>
-            </div>
-            <div class="work__big">
-              <div class="work__small">
-                <p><i class="fas fa-cogs fa-2x work__icon"></i><br>
-                  <span class="work__position">Inventory Coordinator</span><br>
-                  Maestro Perú<br>
-                  <span class="work__view">View more <i class="fas fa-arrow-right"></i></span>  
-                </p>
-              </div>
-            </div>    
-          </article> 
-          <div class="btn">
-            <a class="btn__link" href="img/jose_delacruz.pdf" download>Download CV<i class="fas fa-file-download btn__icon"></i></a>        
-          </div>
-          <aricle class="modal"></aricle>
         </section>    
 
-        <!--===== CONTACT =====-->   
-        <section id="contact" class="contact">
-          <h2 class="subtitle">Contact</h2>
-          <hr class="line-ver">
-          <form name="contact" method="POST" class="contact-form" netlify-honeypot="bot-field" data-netlify="true">
-            <div class="form-container">
-              <!-- Campo honeypot (tarro de miel) para evitar los bots de spam -->
-              <p class="hidden">
-                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-              </p>
-              <div class="group">
-                <input type="text" name="name" id="name" required><span class="bar"></span>
-                <label for="">Nombre</label>
-              </div>
-              <div class="group">
-                  <input type="email" name="email" id="email" required><span class="bar"></span>
-                  <label for="">Correo</label>
-              </div>
-              <div class="group">
-                  <textarea name="subject" id="subject" rows="3" required></textarea><span class="bar"></span>
-                  <label for="">Asunto</label>
-              </div>
-              <p class="warnings"></p>
-              <button type="submit">Enviar<i class="fas fa-envelope btn__icon"></i></button>
+        <!--===== PROJECTS =====-->
+        <section id="projects" class="projects">
+            <h2 class="subtitle">Projects</h2>
+            <hr class="line-ver" />
+            
+            <article class="project">
+                <figure class="project__link">
+                    <a href="https://jdelacruzv.github.io/quote-garden/" target="_blank" title="Visitar quote garden">
+                        <img class="project__img" src="img/quote-garden.png" alt="Quote garden" />
+                    </a>
+                </figure>
+
+                <figure class="project__link">
+                    <a href="https://jdelacruzv.github.io/simon-says/" target="_blank" title="Visitar juego simon says">
+                        <img class="project__img" src="img/simon-says.jpg" alt="Juego simon dice" />
+                    </a>
+                </figure>
+                
+                <figure class="project__link">
+                    <a href="https://jdelacruzv.github.io/memoria/" target="_blank" title="Visitar juego memoria">
+                        <img class="project__img" src="img/memoria.jpg" alt="Juego de memoria" />
+                    </a>
+                </figure>
+                
+                <figure class="project__link">
+                    <a href="https://jdelacruzv.github.io/analog-clock/" target="_blank" title="Visitar relog analógico">
+                        <img class="project__img" src="img/analog-clock.jpg" alt="Reloj analógico" />
+                    </a>
+                </figure>
+                
+                <figure class="project__link">
+                    <a href="https://jdelacruzv.github.io/the-best-fruit/" target="_blank" title="Visitar the best fruit">
+                        <img class="project__img" src="img/the-best-fruit.jpg" alt="Page The Best Fruit" />
+                    </a>
+                </figure>
+            </article>
+
+            <div class="btn">
+                <a class="btn__link" href="https://github.com/jdelacruzv" target="_blank" download>View more
+                    <i class="fab fa-github btn__icon"></i>
+                </a>
             </div>
-          </form>
-          <div class="redes">
-            <a href="https://github.com/jdelacruzv" target="_blank" class="redes-link github"></a>
-            <a href="https://www.linkedin.com/in/jose-luis-de-la-cruz-626bb3149/"  target="_blank"  class="redes-link linkedin"></a>
-            <a href="https://www.facebook.com/joseluis.delacruz.vela/"  target="_blank"  class="redes-link facebook"></a>
-            <a href="https://twitter.com/jose_delacruz_v" target="_blank" class="redes-link twitter"></a>
-            <a href="https://www.instagram.com/jdelacruzv/" target="_blank" class="redes-link instagram"></a>
-          </div>
         </section>
-      </div>
-    </main> 
-    
-    <!--===== FOOTER =====-->   
-    <footer class="footer">
-      <div class="wrapper">
-        <div class="footer-details">
-            <span>Desarrollado por &#169;<a class="footer-link"href="https://github.com/jdelacruzv" target="_blank">José De La Cruz.</a> 2020-2021</span>
+
+        <!--===== SKILLS =====-->
+        <section id="skills" class="skills">
+            <h2 class="subtitle">Skills</h2>
+            <hr class="line-ver" />
+
+            <article class="skill">
+                <figure class="skill__tool">
+                    <img class="skill__img" src="img/html.svg" alt="HTML5" />
+                    <span class="skill__title">HTML5</span>
+                </figure>
+            
+                <figure class="skill__tool">
+                    <img class="skill__img" src="img/css.svg" alt="CSS3" />
+                    <span class="skill__title">CSS3</span>
+                </figure>
+            
+                <figure class="skill__tool">
+                    <img class="skill__img" src="img/js.svg" alt="JavaScript" />
+                    <span class="skill__title">JavaScript</span>
+                </figure>
+            
+                <figure class="skill__tool">
+                    <img class="skill__img" src="img/git.svg" alt="Git" />
+                    <span class="skill__title">Git</span>
+                </figure>
+            
+                <figure class="skill__tool">
+                    <img class="skill__img" src="img/github.svg" alt="GitHub" />
+                    <span class="skill__title">GitHub</span>
+                </figure>
+            
+                <figure class="skill__tool">
+                    <img class="skill__img" src="img/terminal.svg" alt="Linea de comandos" />
+                    <span class="skill__title">Terminal</span>
+                </figure>
+            </article>
+        </section>
+
+        <!--===== JOBS =====-->
+        <section id="jobs" class="jobs">
+            <h2 class="subtitle">Jobs</h2>
+            <hr class="line-ver" />
+
+            <article class="job">
+                <div class="job__outside">
+                    <div class="job__inside">
+                        <i class="fas fa-laptop fa-2x job__icon"></i><br />
+                        <span class="job__position">IT Support Technician</span><br />
+                        <span>Freelance</span><br />
+                        <span class="job__view">View more<i class="fas fa-arrow-right job__view-left"></i></span>                
+                    </div>
+                </div>
+                
+                <div class="job__outside">
+                    <div class="job__inside">
+                        <i class="fas fa-tasks fa-2x job__icon"></i><br />
+                        <span class="job__position">Inventory Supervisor</span><br />
+                        <span>Multitop</span><br />
+                        <span class="job__view">View more<i class="fas fa-arrow-right job__view-left"></i></span>
+                    </div>
+                </div>
+
+                <div class="job__outside">
+                    <div class="job__inside">
+                        <i class="fas fa-cogs fa-2x job__icon"></i><br />
+                        <span class="job__position">Inventory Coordinator</span><br />
+                        <span>Maestro Perú</span><br />
+                        <span class="job__view">View more<i class="fas fa-arrow-right job__view-left"></i></span>
+                    </div>
+                </div>
+            </article>
+
+            <div class="btn">
+                <a class="btn__link" href="img/jose_delacruz.pdf" download>Download CV<i class="fas fa-file-download btn__icon"></i></a>
+            </div>
+            
+            <aricle class="modal"></aricle>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section id="contact" class="contact">
+            <h2 class="subtitle">Contact</h2>
+            <hr class="line-ver" />
+
+            <form class="contact__form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                <div class="contact__container">
+                    <!-- Campo honeypot (tarro de miel) para evitar los bots de spam -->
+                    <div class="hidden">
+                        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                    </div>
+                    
+                    <div class="contact__group">
+                        <input type="text" name="name" id="name" required /><span class="contact__bar"></span>
+                        <label for="">Name</label>
+                    </div>
+                    
+                    <div class="contact__group">
+                        <input type="email" name="email" id="email" required /><span class="contact__bar"></span>
+                        <label for="">Email</label>
+                    </div>
+                    
+                    <div class="contact__group">
+                        <textarea name="subject" id="subject" rows="3" required></textarea><span class="contact__bar"></span>
+                        <label for="">Subject</label>
+                    </div>
+
+                    <button class="contact__btn" type="submit">Send<i class="fas fa-envelope btn__icon"></i></button>
+                </div>
+            </form>
+        </section>
         </div>
-      </div>
-    </footer>    
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <div class="wrapper">
+        <div class="social">
+            <a class="social__link" href="https://github.com/jdelacruzv/" target="_blank">
+                <img class="social__img" src="/img/github-1.png" alt="Logo github">
+            </a>
+            <a class="social__link" href="https://www.linkedin.com/in/jose-luis-de-la-cruz-626bb3149/" target="_blank">
+                <img class="social__img" src="/img/linkedin-1.png" alt="Logo linkedin">
+            </a>
+        </div>
+
+        <p class="footer__copyright">&#169; 2020-2021 All rights reserved</p>      
+        </div>
+    </footer>
 
     <script src="main.js"></script>
-  </body>
+</body>
 </html>
