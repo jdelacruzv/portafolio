@@ -2,17 +2,11 @@
 :root {
   --color-white: #FFFFFF;
   --color-light: #EBF3F5;
-  --color-black: #000000;
   --color-dark: #24292E;
-  --color-main: #040B14;
   --color-grey: #8E8E8E;
-  --color-info: #4070F4;
-  --color-info-dark: #0356E4;
-
   --first-color: #4070F4;
+  --first-color-dark: #0356E4;
   --second-color: #0E2431;
-
-  --color-test: #0E2431;
 }
 
 *,
@@ -59,7 +53,7 @@ body {
 }
 
 .btn__link:hover {
-  background-color: var(--color-info-dark);
+  background-color: var(--first-color-dark);
 }
 
 .subtitle {
@@ -130,11 +124,6 @@ body {
   color: var(--first-color);
 }
 
-.navbar__lastname {
-  display: none;
-  margin-left: 0.3rem;
-}
-
 .navbar__menu {
   width: 20px;
   height: 20px;
@@ -171,7 +160,7 @@ body {
 
 .navbar__item:hover {
   font-size: 1.2rem;
-  background-color: var(--color-info);
+  background-color: var(--first-color);
 }
 
 .navbar__link {
@@ -331,7 +320,7 @@ body {
 }
 
 .project__link:hover {
-  background-color: var(--color-info-dark);
+  background-color: var(--first-color-dark);
 }
 
 /*===== SKILLS =====*/
@@ -605,7 +594,7 @@ textarea:focus~.contact__bar::before {
 }
 
 .contact__btn:hover {
-  background-color: var(--color-info-dark);
+  background-color: var(--first-color-dark);
 }
 
 /*===== FOOTER =====*/
@@ -672,10 +661,6 @@ textarea:focus~.contact__bar::before {
     color: var(--first-color);
   }
 
-  .navbar__lastname {
-    display: block;
-  }
-
   .navbar__toggle {
     display: none;
   }
@@ -707,7 +692,7 @@ textarea:focus~.contact__bar::before {
   }
 
   .navbar__link:hover {
-    color: var(--color-info-dark);
+    color: var(--first-color-dark);
   }
 
   .home {
