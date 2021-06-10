@@ -370,8 +370,7 @@ body {
 .job__outside {
   width: 280px;
   height: 280px;
-  margin: 0 1rem 2rem;
-  padding: 1rem 1.3rem;
+  margin: 0 0.8rem 2rem;
   box-shadow: 0 0 5px var(--color-dark);
   border-radius: 5px;
   position: relative;
@@ -381,8 +380,8 @@ body {
   position: absolute;
   top: 40%;
   left: 0;
-  padding-left: 1.2rem;
-  line-height: 2rem;
+  padding-left: 1.5rem;
+  line-height: 1.8rem;
 }
 
 .job__icon {
@@ -391,14 +390,22 @@ body {
 }
 
 .job__position {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 700;
+}
+
+.job__company {
+  font-size: 0.8rem;
 }
 
 .job__view {
   font-size: 0.8rem;
   color: var(--first-color);
   cursor: pointer;
+}
+
+.job__view:hover {
+  color: #853685;
 }
 
 .job__view-left {
@@ -624,10 +631,15 @@ textarea:focus~.contact__bar::before {
 }
 
 /*===== MEDIA QUERIES =====*/
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 320px) {
   .job__inside {
-    padding-left: 2rem;
+    line-height: 2rem;
   }  
+
+  .job__position,
+  .job__company {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 612px) {
@@ -677,7 +689,7 @@ textarea:focus~.contact__bar::before {
     margin-top: 0;
     border-bottom: 0;
     text-align: right;
-    padding: 1.2rem 0 1.2rem 2rem;
+    padding: 1.2rem 0 1.2rem 1rem;
   }
 
   .navbar__item:hover {
@@ -747,6 +759,10 @@ textarea:focus~.contact__bar::before {
 }
 
 @media screen and (min-width: 960px) {
+  .navbar__item {
+    padding-left: 1.8rem;
+  }
+
   .home {
     justify-content: space-between;
   }
