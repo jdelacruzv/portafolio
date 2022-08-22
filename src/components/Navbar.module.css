@@ -21,8 +21,8 @@
 
 .navbar__name:hover,
 .navbar__link:focus {
-  transform: scale(1.1);
-  font-weight: 600;
+  /* transform: scale(1.1); */
+  /* font-weight: 600; */
 }
 
 .navbar__menu {

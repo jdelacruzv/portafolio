@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import style from "./NavbarList.module.css";
 
 const NavbarList = ({ showMenuList }) => {
@@ -8,29 +9,29 @@ const NavbarList = ({ showMenuList }) => {
 	return (
 		<ul className={menuList}>
 			<li className={style.navbar__item}>
-				<a className={style.navbar__link} href="#">
+				<NavLink className={style.navbar__link} to="/">
 					Home
-				</a>
+				</NavLink>
 			</li>
 			<li className={style.navbar__item}>
-				<a className={style.navbar__link} href="#projects">
+				<NavLink className={style.navbar__link} to="/projects">
 					Projects
-				</a>
+				</NavLink>
 			</li>
 			<li className={style.navbar__item}>
-				<a className={style.navbar__link} href="#about">
+				<NavLink className={style.navbar__link} to="/about">
 					About
-				</a>
+				</NavLink>
 			</li>
 			<li className={style.navbar__item}>
-				<a className={style.navbar__link} href="#jobs">
+				<NavLink className={style.navbar__link} to="/jobs">
 					Jobs
-				</a>
+				</NavLink>
 			</li>
 			<li className={style.navbar__item}>
-				<a className={style.navbar__link} href="#contact">
+				<NavLink className={style.navbar__link} to="/contact">
 					Contact
-				</a>
+				</NavLink>
 			</li>
 		</ul>
 	);
