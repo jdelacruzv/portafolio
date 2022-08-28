@@ -25,10 +25,12 @@ const HomePage = () => {
 						and I invite you to take a look at some of my projects.
 					</p>
 				</h1>
-				<Button text={"Projects"} icon={"/assets/icons/go.png"} />
-				<div className={style.home__icons}>
-					{showIcons}
-				</div>
+				<Button 
+					text={"Projects"}	
+					icon={"/assets/icons/next.png"} 
+					path={"/projects"}
+				/>
+				<div className={style.home__icons}>{showIcons}</div>
 			</div>
 		</section>
 	);

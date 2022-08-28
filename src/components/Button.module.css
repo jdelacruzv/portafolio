@@ -22,24 +22,24 @@
   background-color: var(--color-primary-dark);
 }
 
-.btn__link--small {
+.btn__icon {
+  width: 1.5rem;
+  margin-left: 0.5em;
+}
+
+.btn__link__small {
   font-size: 0.8rem;
   font-weight: 100 ;
   padding: 0.8em 0.8em;
 }
 
-.btn__link--ghost {
+.btn__link__ghost {
   background-color: transparent;
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
 }
 
-.btn__link--ghost:hover {
+.btn__link__ghost:hover {
   background-color: transparent;
   color: var(--color-button);
-}
-
-.btn__icon {
-  width: 1.5rem;
-  margin-left: 0.5em;
 }
