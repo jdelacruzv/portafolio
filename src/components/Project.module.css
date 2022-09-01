@@ -2,10 +2,8 @@
   max-width: 280px;
   height: auto;
   margin: 0 0 2rem 0;
-  padding: 1em 1.3em;
-  background-color: var(--color-card-dark);
-  color: var(--color-text-body-dark);
-  box-shadow: 0 0 5px var(--color-box-shadow);
+  padding: 1rem 1.3rem;
+  box-shadow: 0 0 5px var(--color-white);
   border-radius: 5px;
 }
 
@@ -13,7 +11,7 @@
   text-align: center;
   font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
 }
 
 .project__img {
@@ -26,7 +24,7 @@
 .project__text {
   text-align: center;
   font-size: 0.9rem;
-  margin: 1.5em auto;
+  margin: 1.5rem auto;
   line-height: 1.5;
 }
 

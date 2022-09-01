@@ -9,7 +9,7 @@
   align-items: center;
   text-decoration: none;
   background-color: var(--color-primary);
-  color: var(--color-button);
+  color: var(--color-white);
   border: none;
   border-radius: 5px;
   font-size: 1.125rem;
@@ -34,12 +34,10 @@
 }
 
 .btn__link__ghost {
-  background-color: transparent;
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
+  background-color: var(--color-gray);
+  border: 1px solid var(--color-gray);
 }
 
 .btn__link__ghost:hover {
   background-color: transparent;
-  color: var(--color-button);
 }

@@ -1,23 +1,21 @@
 .projects__container {
 	display: flex;
   flex-direction: column; 
+  padding: 1rem;
 }
 
 .projects {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  margin: 0 1rem 1rem;
 }
 
-@media screen and (min-width: 960px) {
-  .projects__container {
-    margin: 0 auto;
-    padding: 2rem 2rem 0;
-  }
-
+@media screen and (min-width: 668px) {
   .projects {
-    margin-bottom: 0;
+    flex-direction: row;
+    gap: 1rem;
+    padding-bottom: 1rem;
   }
 }

@@ -30,7 +30,7 @@
 .navbar__link {
 	display: block;
   text-decoration: none;
-  color: var(--color-white-medium);
+  color: var(--color-fonts);
   padding: 1rem 0;
 }
 
@@ -39,7 +39,7 @@
   color: var(--color-primary)
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 868px) {
 	.navbar__list {
     position: static;
     border: none;

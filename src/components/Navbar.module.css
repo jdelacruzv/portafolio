@@ -3,20 +3,21 @@
   align-items: center;
   justify-content: space-between;
   padding: 2rem 2rem;
+  height: 112px;
 }
 
 .navbar__link {
   text-decoration: none;
-  color: var(--color-white);
 }
 
 .navbar__name {
   text-transform: capitalize;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 2rem;  
   margin: 0;
   cursor: pointer;
+  color: var(--color-fonts);
 }
 
 .navbar__menu {
@@ -31,7 +32,7 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 868px) {
 	.navbar__menu {
     display: none;
   }
