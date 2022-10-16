@@ -29,44 +29,6 @@ const AboutPage = () => {
 					</p>
 				</div>
 			</article>
-			<div className={style.social}>
-				<a
-					className={style.social__link}
-					href="https://www.facebook.com/joseluis.delacruz.vela/"
-					target="_blank"
-				>
-					<img
-						id="social__facebook"
-						className={style.social__img}
-						src="assets/icons/facebook.png"
-						alt="Logo facebook"
-					/>
-				</a>
-				<a
-					className={style.social__link}
-					href="https://twitter.com/jose_delacruz_v/"
-					target="_blank"
-				>
-					<img
-						id="social__twitter"
-						className={style.social__img}
-						src="assets/icons/twitter.png"
-						alt="Logo twitter"
-					/>
-				</a>
-				<a
-					className={style.social__link}
-					href="https://www.instagram.com/jose_delacruz_v/"
-					target="_blank"
-				>
-					<img
-						id="social__instagram"
-						className={style.social__img}
-						src="assets/icons/instagram.png"
-						alt="Logo instagram"
-					/>
-				</a>
-			</div>
 		</section>
 	);
 };

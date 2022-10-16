@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.social__link {
+  display: flex;
+}
+
+.social__img {
+  width: 64px;
+  height: 64px;
+  margin: 0 .4rem;
+}
+
+.social__img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) {
+  .social__img {
+    margin: 0 1rem;
+  }
+}

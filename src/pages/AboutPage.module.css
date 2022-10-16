@@ -34,28 +34,6 @@
   line-height: 1.5;
 }
 
-.social {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem 0;
-}
-
-.social__link {
-  display: flex;
-}
-
-.social__img {
-  width: 40px;
-  height: 40px;
-  margin: 0 0.5rem;
-}
-
-.social__img:hover {
-  transform: scale(1.2);
-}
-
 @media screen and (min-width: 1200px) {
 	.aboutme__container {
     flex-direction: row;
