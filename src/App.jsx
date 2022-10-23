@@ -5,7 +5,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import AboutPage from "./pages/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import JobsPage from "./pages/JobsPage";
-import ContactPage from "./pages/ContactPages";
+import ContactPage from "./pages/ContactPage";
 
 const App = () => {
   return (

@@ -18,6 +18,7 @@
 
 .social__img:hover {
   transform: scale(1.2);
+  transition: all .3s ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
