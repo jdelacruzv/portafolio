@@ -24,11 +24,6 @@ const NavbarList = ({ showMenuList }) => {
 				</NavLink>
 			</li>
 			<li className={style.navbar__item}>
-				<NavLink className={style.navbar__link} to="/jobs">
-					Jobs
-				</NavLink>
-			</li>
-			<li className={style.navbar__item}>
 				<NavLink className={style.navbar__link} to="/contact">
 					Contact
 				</NavLink>

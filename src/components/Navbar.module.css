@@ -8,6 +8,13 @@
 
 .navbar__link {
   text-decoration: none;
+  will-change: filter;
+}
+
+.navbar__link:hover {
+  filter: drop-shadow(0 0 2rem var(--color-white));
+  transform: scale(1.1);
+  transition: all .5s ease-in-out;
 }
 
 .navbar__name {
@@ -17,7 +24,11 @@
   line-height: 2rem;  
   margin: 0;
   cursor: pointer;
-  color: var(--color-fonts);
+  color: var(--color-white);
+}
+
+.navbar__lastname {
+  display: none;
 }
 
 .navbar__menu {
@@ -30,6 +41,14 @@
   width: inherit;
   height: inherit;
   cursor: pointer;
+}
+
+@media screen and (min-width: 390px) {
+  .navbar__lastname {
+    display: inline-block;
+    margin-left: .5rem;
+  }
+
 }
 
 @media screen and (min-width: 868px) {

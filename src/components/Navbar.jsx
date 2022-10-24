@@ -9,7 +9,10 @@ const Navbar = () => {
 	return (
 		<nav className={style.navbar}>
 			<NavLink className={style.navbar__link} to="/">
-				<h1 className={style.navbar__name}>Jose de la cruz</h1>
+				<h1 className={style.navbar__name}>
+					Jose
+					<span className={style.navbar__lastname}>de la cruz</span>
+				</h1>
 			</NavLink>
 			<figure className={style.navbar__menu}>
 				<img
