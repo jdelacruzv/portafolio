@@ -7,8 +7,8 @@ const AboutPage = () => {
 				<figure className={style.aboutme__photo}>
 					<img
 						className={style.aboutme__img}
-						src="/assets/images/me3.jpeg"
-						alt="Photo family"
+						src="/assets/images/me.jpeg"
+						alt="Photo Jose"
 					/>
 				</figure>
 				<div className={style.aboutme__texts}>
