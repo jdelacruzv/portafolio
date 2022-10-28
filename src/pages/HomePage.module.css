@@ -10,6 +10,7 @@
   min-width: 100px;
   height: auto;
   margin: 0 0 1.5rem 0;
+  overflow: hidden;
 }
 
 .home__img {
@@ -17,6 +18,19 @@
   height: auto;
   border-radius: 50%;
   box-shadow: 0 0 5px var(--color-white);
+  animation: 3s slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-bottom: 100%;
+    height: 0%;
+  }
+
+  to {
+    margin-bottom: 0%;
+    height: 100%;
+  }
 }
 
 .home__data {

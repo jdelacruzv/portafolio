@@ -14,6 +14,7 @@
   max-width: 520px;
   height: auto;
   margin: 0;
+  overflow: hidden;
 }
 
 .aboutme__img {
@@ -21,6 +22,19 @@
   height: auto;
   border-radius: 50%;
   box-shadow: 0 0 5px var(--color-white);
+  animation: 3s slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 0%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
 }
 
 .aboutme__texts {
