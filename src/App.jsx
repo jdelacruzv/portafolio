@@ -1,5 +1,4 @@
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './components/Header'
 import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
@@ -9,7 +8,7 @@ import ContactPage from "./pages/ContactPage";
 
 const App = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -18,7 +17,7 @@ const App = () => {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 
