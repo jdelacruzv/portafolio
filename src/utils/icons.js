@@ -25,10 +25,18 @@ export const icons = [
 	},
 	{
 		id: 6,
-		name: "mongo",
+		name: "ts",
 	},
 	{
 		id: 7,
-		name: "ts"
+		name: "python",
+	},
+	{
+		id: 8,
+		name: "sql",
+	},
+	{
+		id: 9,
+		name: "mongo",
 	},
 ];
