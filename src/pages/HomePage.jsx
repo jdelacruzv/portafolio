@@ -13,15 +13,16 @@ const HomePage = () => {
 					className={style.home__img}
 					src="/assets/images/jose.jpg"
 					alt="Photo Jose"
+          fetchpriority="high"
 				/>
 			</figure>
 			<div className={style.home__data}>
 				<h1 className={style.home__title}>
-					<span>I am a</span>
-					<br />
-					<span className={style.home__title__color}>Web developer</span>
+					<p className={style.home__title__white}>I am a</p>
+					{/* <br /> */}
+					<p className={style.home__title__color}>Software developer</p>
 					<p className={style.home__text}>
-						Hi, I'm <span className={style.home__text__color}>Jose </span>
+						Hi, my name is <span className={style.home__text__color}>JOSE </span>
 						and I invite you to take a look at some of my projects.
 					</p>
 				</h1>
