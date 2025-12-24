@@ -1,101 +1,81 @@
-.contact {
+.contact_container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
   margin: 0 1.5rem;
+	height: calc(100vh - 112px);
 }
-
 .contact__intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 3rem;
 }
-
 .contact__title {
   margin: 0 0 1.5rem;
   font-size: 2.25rem;
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
-
 .contact__text {
   margin: 0;
   line-height: 1.6;
 }
-
 .contact__email {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 1.5rem 0;
 }
-
 .contact__email__text {
-  background-color: var(--color-white);
-  color: var(--color-dark);
+  background-color: var(--color-fonts);
+  color: var(--color-card-dark);
   margin: 0;
   padding: 1rem 1.5rem;
   text-align: center;
   border-radius: 2rem;
-  font-weight: 600;
+	font-size: 1.3rem;
+  font-weight: bold;
 }
-
 .contact__email:hover {
   transform: scale(1.2);
   transition: all .3s ease-in-out;
 }
-
 .contact__phone {
-  max-width: 300px;
+  max-width: 120px;
   height: auto;
   margin: 0 0 1.5rem;
   overflow: hidden;
 }
-
 .contact__phone__img {
   width: 100%;
   height: auto;
   animation: 3s slidein;
 }
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 0%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .contact {
+  .contact_container {
     flex-direction: row;
     gap: 3rem;
     height: calc(100vh - 112px);
     margin-bottom: 0;
   }
-
   .contact__intro {
     width: 400px;
     margin-bottom: 0;
   }
-
   .contact__title {
     font-size: 3rem;
   }
-
   .contact__email__text {
     width: 80%;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
+	.contact__phone {
+		max-width: 300px;
+	}
 }
-
 @media screen and (min-width: 1200px) {
-  .contact {
+  .contact_container {
     gap: 5rem;
   }
 }

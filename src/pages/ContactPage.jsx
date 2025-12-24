@@ -3,7 +3,7 @@ import style from "./ContactPage.module.css";
 
 const ContactPage = () => {
 	return (
-		<section className={style.contact}>
+		<section className={style.contact_container}>
 			<div className={style.contact__intro}>
 				<h2 className={style.contact__title}>Contact me</h2>
 				<p className={style.contact__text}>Email :</p>
