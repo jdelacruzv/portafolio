@@ -19,7 +19,6 @@ const HomePage = () => {
 			<div className={style.home__data}>
 				<h1 className={style.home__title}>
 					<p className={style.home__title__white}>I am a</p>
-					{/* <br /> */}
 					<p className={style.home__title__color}>Software developer</p>
 					<p className={style.home__text}>
 						Hi, my name is <span className={style.home__text__color}>JOSE </span>
