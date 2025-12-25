@@ -1,66 +1,63 @@
 .about__container {
-  padding: 1rem;
-}
-
-.aboutme__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-	padding: 0 1rem;
+	padding: .8rem 2rem;
 }
-
-.aboutme__photo {
-  max-width: 520px;
+.about__photo {
+	min-width: 100px;
   height: auto;
-  margin: 0;
+  margin: 0 0 1.5rem 0;
   overflow: hidden;
 }
-
-.aboutme__img {
+.about__img {
   width: 100%;
   height: auto;
   border-radius: 50%;
   box-shadow: 0 0 5px var(--color-white);
-  animation: 3s slidein;
 }
-
-@keyframes slidein {
-  from {
-    margin-right: 100%;
-    width: 0%;
-  }
-
-  to {
-    margin-right: 0%;
-    width: 100%;
-  }
-}
-
-.aboutme__texts {
-	max-width: 600px;
-	margin: 1rem;
+.about__data {
 	text-align: center;
 }
-
-.aboutme__text {
-  font-size: 0.9rem;
-  line-height: 1.5;
+.about__text {
+	font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 2rem;
 }
-
-@media screen and (min-width: 1200px) {
-	.aboutme__container {
-    flex-direction: row;
+@media screen and (min-width: 480px) {
+	.about__container {
+		padding: 2rem 3rem
+	}
+}
+@media screen and (min-width: 960px) { 
+	.about__container {
+    flex-direction: row-reverse;
+		align-items: center;
+		justify-content: center;
+		height: calc(100vh - 112px);
+    gap: 3rem;
+		padding: 2rem 4rem;
+		margin: auto;
   }
-
-  .aboutme__photo {
-    margin-right: 2rem;
-  }
-
-	.aboutme__text {
-    margin: 1.5rem 0;
+	.about__data {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
     text-align: left;
-    line-height: 1.8;
-		font-size: 1.1rem;
+    margin: 0;
+		max-width: 50%;
+		padding: 0 2rem;
   }
+	.about__photo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+     width: 400px;
+    height: 400px;
+  }
+	.about__text {  
+		line-height: 2.5rem;
+	}
 }

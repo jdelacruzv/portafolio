@@ -93,7 +93,7 @@
   }
 	.home__icons {
   	margin: 3rem 1rem;
-}
+	}
 }
 @media screen and (min-width: 1024px) {
   .home__container {
