@@ -11,7 +11,7 @@ const HomePage = () => {
 			<figure className={style.home__photo}>
 				<img
 					className={style.home__img}
-					src="/assets/images/jose.jpg"
+					src="/assets/images/jose.png"
 					alt="Photo Jose"
           fetchpriority="high"
 				/>

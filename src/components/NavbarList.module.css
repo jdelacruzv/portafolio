@@ -13,11 +13,9 @@
   padding: 0;
   z-index: 1000;
 }
-
 .show__navbar {
   right: 0;
 }
-
 .navbar__item {
 	border-bottom: 1px solid var(--color-gray);
   line-height: 3;
@@ -26,19 +24,16 @@
   text-align: center;
   transition: all .4s ease;
 }
-
 .navbar__link {
 	display: block;
   text-decoration: none;
   color: var(--color-fonts);
   padding: 1rem 0;
 }
-
 .navbar__link:hover {
   background-color: var(--color-dark);
   color: var(--color-primary)
 }
-
 @media screen and (min-width: 868px) {
 	.navbar__list {
     position: static;
@@ -47,17 +42,14 @@
     height: auto;
     display: flex;
   }
-
   .navbar__item {
     border-bottom: none;
   }
-
   .navbar__link {
     text-decoration: none;
     border-radius: 5px;
     padding: 0 1rem;
   }
-
   .navbar__link:hover, 
   .navbar__link:focus {
     background-color: var(--color-dark);
