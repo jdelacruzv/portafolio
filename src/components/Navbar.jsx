@@ -10,8 +10,8 @@ const Navbar = () => {
 		<nav className={style.navbar}>
 			<NavLink className={style.navbar__link} to="/">
 				<h1 className={style.navbar__name}>
-					Jose
-					<span className={style.navbar__lastname}>de la cruz</span>
+					Hello
+					<span className={style.navbar__lastname}>World!</span>
 				</h1>
 			</NavLink>
 			<figure className={style.navbar__menu}>
