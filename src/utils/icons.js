@@ -13,19 +13,19 @@ export const icons = [
 	},
 	{
 		id: 3,
-		name: "react",
+		name: "ts",
 	},
 	{
 		id: 4,
-		name: "git",
+		name: "react",
 	},
 	{
 		id: 5,
-		name: "node",
+		name: "nodejs",
 	},
 	{
 		id: 6,
-		name: "ts",
+		name: "express",
 	},
 	{
 		id: 7,
@@ -33,10 +33,18 @@ export const icons = [
 	},
 	{
 		id: 8,
-		name: "sql",
+		name: "django",
 	},
 	{
 		id: 9,
-		name: "mongo",
+		name: "sqlite",
+	},
+	{
+		id: 10,
+		name: "postgres",
+	},
+	{
+		id: 11,
+		name: "mongodb",
 	},
 ];
