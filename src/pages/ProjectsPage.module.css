@@ -1,35 +1,32 @@
 .projects__container {
 	display: flex;
   flex-direction: column; 
+	justify-content: center;
+  align-items: center;
   padding: 1rem;
   overflow: hidden;
 }
-
 .projects {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  animation: 2s slidein;
 }
-
-@keyframes slidein {
-  from {
-    margin-top: 100%;
-    height: 0%;
-  }
-
-  to {
-    margin-top: 0%;
-    height: 100%;
-  }
-}
-
 @media screen and (min-width: 668px) {
   .projects {
     flex-direction: row;
     gap: 1rem;
     padding-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__container {
+    height: calc(100vh - 112px);
+  }
+}
+@media screen and (min-width: 1300px) {
+	.projects {
+    gap: 3rem;
   }
 }

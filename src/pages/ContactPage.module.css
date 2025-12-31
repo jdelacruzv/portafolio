@@ -50,7 +50,6 @@
 .contact__phone__img {
   width: 100%;
   height: auto;
-  animation: 3s slidein;
 }
 @media screen and (min-width: 768px) {
   .contact_container {
