@@ -17,7 +17,7 @@ export const icons = [
 	},
 	{
 		id: 4,
-		name: "react",
+		name: "astro",
 	},
 	{
 		id: 5,
