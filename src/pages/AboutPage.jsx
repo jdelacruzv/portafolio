@@ -8,6 +8,7 @@ const AboutPage = () => {
 					className={style.about__img}
 					src="/assets/images/jose.png"
 					alt="Photo Jose"
+					fetchpriority="high"
 				/>
 			</figure>
 			<div className={style.about__data}>
@@ -23,7 +24,6 @@ const AboutPage = () => {
 				</p>
 			</div>
 		</section>
-		// </section>
 	);
 };
 
