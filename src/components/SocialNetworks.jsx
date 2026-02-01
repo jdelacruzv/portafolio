@@ -27,7 +27,7 @@ const SocialNetworks = () => {
 			</a>
 			<a
 				className={style.social__link}
-				href="https://twitter.com/jose_delacruz_v/"
+				href="https://x.com/jose_delacruz_v/"
 				target="_blank"
 			>
 				<img
