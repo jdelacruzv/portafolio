@@ -28,6 +28,16 @@ const NavbarList = ({ showMenuList, onClose }) => {
 					Contact
 				</NavLink>
 			</li>
+			<li className={style.navbar__item}>
+				<a
+					className={style.navbar__link}
+					href="https://djangomenblog.pythonanywhere.com/"
+          target="_blank"
+					onClick={onClose}
+				>
+					Blog
+				</a>
+			</li>
 		</ul>
 	);
 };
