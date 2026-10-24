@@ -22,7 +22,10 @@ const Navbar = () => {
 					alt="Menú toggle"
 				/>
 			</figure>
-			<NavbarList showMenuList={showList} />
+			<NavbarList
+				showMenuList={showList}
+				onClose={() => setShowList(false)}
+			/>
 		</nav>
 	);
 };
