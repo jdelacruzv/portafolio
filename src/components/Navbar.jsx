@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import NavbarList from "./NavbarList";
 import style from "./Navbar.module.css";
+import NavbarList from "./NavbarList";
 
 const Navbar = () => {
 	const [showList, setShowList] = useState(false);
@@ -9,10 +9,7 @@ const Navbar = () => {
 	return (
 		<nav className={style.navbar}>
 			<NavLink className={style.navbar__link} to="/">
-				<h1 className={style.navbar__name}>
-					Hello
-					<span className={style.navbar__lastname}>World!</span>
-				</h1>
+				<h1 className={style.navbar__name}>Jose De La Cruz</h1>
 			</NavLink>
 			<figure className={style.navbar__menu}>
 				<img
@@ -22,10 +19,7 @@ const Navbar = () => {
 					alt="Menú toggle"
 				/>
 			</figure>
-			<NavbarList
-				showMenuList={showList}
-				onClose={() => setShowList(false)}
-			/>
+			<NavbarList showMenuList={showList} onClose={() => setShowList(false)} />
 		</nav>
 	);
 };

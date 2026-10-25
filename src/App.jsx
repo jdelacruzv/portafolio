@@ -1,24 +1,21 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from './components/Header'
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
-import AboutPage from "./pages/AboutPage";
-import NotFoundPage from "./pages/NotFoundPage";
-import ContactPage from "./pages/ContactPage";
 
 const App = () => {
-  return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
-    </BrowserRouter>
-  )
-}
+	return (
+		<BrowserRouter>
+			<Header />
+			<Routes>
+				<Route path="/" element={<HomePage />} />
+				<Route path="/projects" element={<ProjectsPage />} />
+				<Route path="/contact" element={<ContactPage />} />
+				<Route path="*" element={<Navigate to="/" replace />} />
+			</Routes>
+		</BrowserRouter>
+	);
+};
 
-export default App
+export default App;

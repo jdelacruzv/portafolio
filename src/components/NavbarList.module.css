@@ -1,58 +1,58 @@
 .navbar__list {
 	list-style: none;
-  position: fixed;
-  top: 90px;
-  right: -100vw;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--color-dark);
-  border-top: 1px solid var(--color-gray);
-  border-left: 1px solid var(--color-gray);
-  transition: right 1s ease;
-  margin: 0;
-  padding: 0;
-  z-index: 1000;
+	position: fixed;
+	top: var(--header-height);
+	right: -100vw;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--color-dark);
+	border-top: 1px solid var(--color-gray);
+	border-left: 1px solid var(--color-gray);
+	transition: right 1s ease;
+	margin: 0;
+	padding: 0;
+	z-index: 1000;
 }
 .show__navbar {
-  right: 0;
+	right: 0;
 }
 .navbar__item {
 	border-bottom: 1px solid var(--color-gray);
-  line-height: 3;
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center;
-  transition: all .4s ease;
+	line-height: 3;
+	font-size: 1rem;
+	font-weight: 600;
+	text-align: center;
+	transition: all 0.4s ease;
 }
 .navbar__link {
 	display: block;
-  text-decoration: none;
-  color: var(--color-fonts);
-  padding: 1rem 0;
+	text-decoration: none;
+	color: var(--color-fonts);
+	padding: 1rem 0;
 }
 .navbar__link:hover {
-  background-color: var(--color-dark);
-  color: var(--color-primary)
+	background-color: var(--color-white);
+	color: var(--color-red-dark);
 }
 @media screen and (min-width: 868px) {
 	.navbar__list {
-    position: static;
-    border: none;
-    width: auto;
-    height: auto;
-    display: flex;
-  }
-  .navbar__item {
-    border-bottom: none;
-  }
-  .navbar__link {
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 0 1rem;
-  }
-  .navbar__link:hover, 
-  .navbar__link:focus {
-    background-color: var(--color-dark);
-    color: var(--color-primary)
-  }
+		position: static;
+		border: none;
+		width: auto;
+		height: auto;
+		display: flex;
+	}
+	.navbar__item {
+		border-bottom: none;
+	}
+	.navbar__link {
+		text-decoration: none;
+		border-radius: 5px;
+		padding: 0 1rem;
+	}
+	.navbar__link:hover,
+	.navbar__link:focus {
+		background-color: var(--color-white);
+		color: var(--color-red-dark);
+	}
 }

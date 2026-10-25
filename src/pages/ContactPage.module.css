@@ -3,33 +3,33 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: calc(100vh - 112px);
+	height: calc(100vh - var(--header-height));
 	text-align: center;
 	padding: 0 0 5rem;
 }
 .contact__title {
-  margin: 0 0 0.5rem;
-  font-size: 3rem;
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+	margin: 0 0 0.5rem;
+	font-size: 3rem;
+	font-family: var(--font-display);
 }
 .contact__email {
 	display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1.5rem 0;
+	align-items: center;
+	justify-content: center;
+	margin: 1.5rem 0;
 }
 .contact__email p {
-  background-color: var(--color-fonts);
-  color: var(--color-card-dark);
-  margin: 0;
-  padding: 1rem 1.5rem;
-  border-radius: 2rem;
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	margin: 0;
+	padding: 1rem 1.5rem;
+	border-radius: 2rem;
 	font-size: 1.5rem;
-  font-weight: bold;
+	font-weight: bold;
 }
 .contact__email:hover {
-  transform: scale(1.2);
-  transition: all .3s ease-in-out;
+	transform: scale(1.2);
+	transition: all 0.3s ease-in-out;
 }
 .contact_container p {
 	font-size: 1.2rem;

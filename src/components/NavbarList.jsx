@@ -19,11 +19,6 @@ const NavbarList = ({ showMenuList, onClose }) => {
 				</NavLink>
 			</li>
 			<li className={style.navbar__item}>
-				<NavLink className={style.navbar__link} to="/about" onClick={onClose}>
-					About
-				</NavLink>
-			</li>
-			<li className={style.navbar__item}>
 				<NavLink className={style.navbar__link} to="/contact" onClick={onClose}>
 					Contact
 				</NavLink>
@@ -32,7 +27,7 @@ const NavbarList = ({ showMenuList, onClose }) => {
 				<a
 					className={style.navbar__link}
 					href="https://djangomenblog.pythonanywhere.com/"
-          target="_blank"
+					target="_blank"
 					onClick={onClose}
 				>
 					Blog
