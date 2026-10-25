@@ -37,14 +37,14 @@ export const icons = [
 	},
 	{
 		id: 9,
-		name: "sqlite",
+		name: "fastapi",
 	},
 	{
 		id: 10,
-		name: "postgres",
+		name: "sqlite",
 	},
 	{
 		id: 11,
-		name: "mongodb",
+		name: "postgres",
 	},
 ];
