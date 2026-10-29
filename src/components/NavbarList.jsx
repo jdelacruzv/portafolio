@@ -19,6 +19,16 @@ const NavbarList = ({ showMenuList, onClose }) => {
 				</NavLink>
 			</li>
 			<li className={style.navbar__item}>
+				<a
+					className={style.navbar__link}
+					href="https://josedelacruz.neocities.org/"
+					target="_blank"
+					onClick={onClose}
+				>
+					Games
+				</a>
+			</li>
+			<li className={style.navbar__item}>
 				<NavLink className={style.navbar__link} to="/contact" onClick={onClose}>
 					Contact
 				</NavLink>
