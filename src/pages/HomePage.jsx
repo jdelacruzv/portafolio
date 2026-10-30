@@ -15,6 +15,10 @@ const HomePage = () => {
 					className={style.home__img}
 					src="/assets/images/jose.png"
 					alt="Jose De La Cruz"
+					width="436"
+					height="512"
+					loading="eager"
+					fetchPriority="high"
 				/>
 			</figure>
 			<h1 className={style.home__title}>Software Developer</h1>

@@ -1,6 +1,7 @@
 .btn__container {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
+	gap: 0.8rem;
 }
 .btn__link {
 	display: flex;
@@ -52,10 +53,15 @@
 	font-weight: 100;
 	padding: 0.8em 0.8em;
 }
+
 .btn__link__ghost {
-	background-color: var(--color-gray);
-	border: 1px solid var(--color-gray);
+	background-color: var(--color-gray-dark);
+	border: 1px solid var(--color-gray-dark);
+	color: var(--color-white);
 }
 .btn__link__ghost:hover {
-	background-color: transparent;
+	background-color: var(--color-muted);
+	border-color: var(--color-muted);
+	color: var(--color-white);
 }
+
